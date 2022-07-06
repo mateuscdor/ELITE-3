@@ -5,15 +5,15 @@ await conn.sendMessage(m.chat, { react: { text: '❌', key: m.key } })
  let txt = `
 Hola *${name}* 
 
-Ese comando ya no está disponible`
+Desarrollo...`
     
      conn.sendHydrated(m.chat, txt, igfg, null, null, null, null, null, [
       ['⦙☰ Menu', '.menu'],
-      ['⦙☰ Menu 2', '.memucompleto'],
+      ['⦙☰ Menu 2', '.menucompleto'],
     ], m)
 
 } 
 
-handler.command = ['serbot', 'jadibot'] 
+handler.command = ['PokeVIP'] 
 
 export default handler
