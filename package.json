@@ -1,7 +1,7 @@
 {
-    "name": "Unptoadrih15",
-    "version": "1.0.0",
-    "description": "Bot by unptoadrih15 ",
+    "name": "GHOST-ADMIN",
+    "version": "∞ META",
+    "description": "BOT GESTOR DE GRUPOS WHATSAPP",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -14,16 +14,16 @@
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
         "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/Unptoadrih15",
+    "homepage": "https://github.com/MASTER-VIP-ADM",
     "author": {
-        "name": "Unptoadrih15"
+        "name": "GHOST"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BrunoSobrino/TheMystic-Bot.git"
+        "url": "git+https://github.com/MASTER-VIP-ADM/ELITE.git"
     },
     "bugs": {
-        "url": "https://github.com/BrunoSobrino/TheMystic-Bot/issues"
+        "url": "https://github.com/MASTER-VIP-ADM/ELITE/issues"
     },
     "license": "MIT",
     "dependencies": {
