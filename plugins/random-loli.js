@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text, command }) => {
+/*let handler = async (m, { conn, text, command }) => {
     let yh = global.loli
     let url = yh[Math.floor(Math.random() * yh.length)]
     conn.sendButton(m.chat, `ʀᴀɴᴅᴏᴍ ʟᴏʟɪ - ɪѕ ᴄᴜᴛᴇ 🥺`.trim(), author, url, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)
@@ -362,3 +362,4 @@ let handler = async (m, { conn, text, command }) => {
     "https://i.imgur.com/cIbfUOw.jpg",
     "https://i.imgur.com/jUH2dFn.jpg"
   ]
+*/
