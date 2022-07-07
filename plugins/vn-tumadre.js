@@ -1,4 +1,4 @@
-import util from 'util'
+/*import util from 'util'
 import path from 'path'
 
 let handler = async (m, { conn }) => {
@@ -11,3 +11,4 @@ ptt: true
 handler.customPrefix = /tu madre|tumadre/i
 handler.command = new RegExp
 export default handler
+*/
