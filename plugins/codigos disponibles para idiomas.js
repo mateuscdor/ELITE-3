@@ -53,7 +53,7 @@ Lista de códigos:
 `.trim(), m)
     let mentionedJid = [m.sender]
 }
-handler.customPrefix = /codigos para audios|codigosparaaudios|códigos para audios|Códigos para audios/i
+handler.customPrefix = /codigos para trad|code trad/i
 handler.command = new RegExp
 
 export default handler
