@@ -1,8 +1,7 @@
 let handler = async(m, { conn }) => {
 
   global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
-    await m.reply(`Prefix berhasil direset`)
-     conn.fakeReply(m.chat, 'Prefix berhasil direset', '0@s.whatsapp.net', 'Reset Prefix')
+     conn.fakeReply(m.chat, '*❗Prefijo restablecido con éxito❗*', '0@s.whatsapp.net', 'PREFIJO RESETEADO')
 }
 handler.help = ['resetprefix']
 handler.tags = ['owner']
