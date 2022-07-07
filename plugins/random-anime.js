@@ -1,4 +1,4 @@
-import axios from "axios"
+/*import axios from "axios"
 let handler = async (m, {command, conn}) => {
 if (command == 'akira') {
 let haha = await conn.getFile(`https://api-reysekha.herokuapp.com/api/wallpaper/akira?apikey=APIKEY`)
@@ -110,3 +110,4 @@ handler.command = handler.help = ['akira', 'akiyama', 'anna', 'asuna', 'ayuzawa'
 handler.tags = ['anime']
 handler.limit = true
 export default handler
+*/
