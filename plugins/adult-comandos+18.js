@@ -120,4 +120,4 @@ handler.command = ['nsfwloli', 'nsfwfoot', 'nsfwass', 'nsfwbdsm', 'nsfwcum', 'ns
 handler.limit = true
 handler.admin = true
 handler.tags = ['nsfw']
-export default  handler/*
+export default  handler*/
