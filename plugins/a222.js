@@ -11,7 +11,7 @@ mentionedJid: [who]
 }})}
 handler.help = ['addprem <@user>']
 handler.tags = ['owner']
-handler.command = /^(adddd|\+)prem$/i
+handler.command = /^(abc|\+)prem$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
