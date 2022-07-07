@@ -13,7 +13,6 @@ let { name, limit, exp, lastclaim, registered, regTime, age, level, role } = glo
 ├ ${chat.detect ? '✅' : '❌'} Detect
 ├ ${chat.antiLink ? '✅' : '❌'} antilink (Solo enlaces de grupos) ` : ''}
 ├ ${chat.antiLink2 ? '✅' : '❌'} Antilink2 (Todos los enlaces)
-├ ${chat.modohorny ? '✅' : '❌'} ModoHorny(+18)
 ├ ${chat.antiSticker ? '✅' : '❌'} AntiSticker
 ├ ${chat.simi ? '✅' : '❌'} Simi
 ├ ${chat.viewonce ? '✅' : '❌'} Auto View Once 
@@ -31,7 +30,7 @@ let { name, limit, exp, lastclaim, registered, regTime, age, level, role } = glo
 ├ Edad: ${user.age}
 ├ EXP: ${user.exp}
 ├ Nivel: ${level}
-├ Limit: ${user.limit}
+├ Diamond: ${user.limit}
 ├ Registrado: ${registered ? 'Si (' + new Date(regTime) + ')': 'No'}
 ├ Premium: ${prems.includes(who.split`@`[0]) ? '✅' : '❌'}
 ├ Baneado: ${user.banned ? '✅' : '❌'}
