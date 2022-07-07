@@ -27,7 +27,7 @@ handler.tags = ['General']
 
 handler.command = /^zodiac|zodiaco|zodiacal$/i
 
-module.exports = handler
+export default handler
 
 const zodiak = [
     ["Capricornio ♑️", new Date(1970, 0, 1)],
