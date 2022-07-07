@@ -6,7 +6,7 @@ let handler = async (m, { conn, text}) => {
     else who = m.chat
     if (!who) throw '*Etiquete a una persona con el @*'
     let users = global.db.data.users
-    users[who].banned = false
+    let username = conn.getName(who)
     conn.reply(m.chat, `❗ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢 𝗗𝗘𝗦𝗕𝗔𝗡𝗘𝗔𝗗𝗢 ❗\n\n *✓ Acceso al BOT .*\n *✓ Grupos y chat pv.*\n *✓ Disfrute del BOT:*\n      ${username}. \n\n*𝙰𝚃𝚃𝙴: 𝗕𝗢𝗧 ${gt}*`, m)
 }
 handler.help = ['ban']
