@@ -29,7 +29,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 }
 handler.help = ['stikertele <url>']
 handler.tags = ['sticker']
-handler.command = /^(stic?kertele(gram)?)$/i
+handler.command = /^stikertele$/i
 
 handler.limit = 1
 
