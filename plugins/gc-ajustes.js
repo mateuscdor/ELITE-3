@@ -27,16 +27,16 @@ year: 'numeric'
  
 const sections = [
 {
-title: `Elige quién puede enviar mensajes a este grupo:`,
+title: `ENVIAR MENSAJES\n\nElige quién puede enviar mensajes a este grupo :`,
 rows: [
-      {title: "*Solo administradores*", description: '*Pulsa ahi para cerrar el grupo ➫*', rowId: `.grupo cerrar`},
-      {title: "*Todos los participantes*", description: '*Pulsa ahi para abrir el grupo ➫*', rowId: `.grupo abrir`},
+      {title: "𝗦𝗼𝗹𝗼 𝗮𝗱𝗺𝗶𝗻𝗶𝘀𝘁𝗿𝗮𝗱𝗼𝗿𝗲𝘀", description: 'Pulsa ahi para cerrar el grupo ➫', rowId: `.grupo cerrar`},
+      {title: "𝗧𝗼𝗱𝗼𝘀 𝗹𝗼𝘀 𝗽𝗮𝗿𝘁𝗶𝗰𝗶𝗽𝗮𝗻𝘁𝗲𝘀", description: 'Pulsa ahi para abrir el grupo ➫', rowId: `.grupo abrir`},
 ]}, ]
  
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: `*❗MENU ABRIR/CERRAR GRUPO❗*
-*▪️OPCIONES:*:
+*▪️OPCIONES:*
 .grupo abrir
 .grupo cerrar
 `, footer: `${wm}`, pp,
