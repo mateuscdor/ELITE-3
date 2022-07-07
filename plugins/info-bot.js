@@ -2,7 +2,6 @@ import fs from "fs"
 let handler = m => m
 
 handler.all = async function (m) {
-let name = conn.getName(m.sender)
 let vn = './media/bot.mp3'
 const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "51938089515-1625305606@g.us" } : {}) },
 message: { 
@@ -14,7 +13,7 @@ message: {
 }}}  
 
 if (/^bot$/i.test(m.text)) {
-    
+let name = conn.getName(m.sender)    
 conn.sendButton(m.chat, '*𝙷𝙾𝙻𝙰 ${name} , ¿𝙲𝙾𝙼𝙾 𝚃𝙴 𝙿𝚄𝙴𝙳𝙾 𝙰𝚈𝚄𝙳𝙰𝚁?*', wm, [['user', `.infouser`]], 'conversation', { sendEphemeral: true, quoted: estilo })
 conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: estiloaudio })   
 }
