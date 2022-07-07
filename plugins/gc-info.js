@@ -1,4 +1,6 @@
 let handler = async (m, { conn, participants, groupMetadata }) => {
+await conn.sendMessage(m.chat, { react: { text: '✨', key: m.key } })
+
 const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/avatar_contact.png'
 const { isBanned, welcome, viewonce, simi, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
 const groupAdmins = participants.filter(p => p.admin)
