@@ -40,6 +40,7 @@ text: `*❗MENU ABRIR/CERRAR GRUPO❗*
 *┏━━━❲ ✨𝙴𝙹𝙴𝙼𝙿𝙻𝙾✨ ❳━━━┓* 
 *┠ ${usedPrefix + command} abrir*
 *┠ ${usedPrefix + command} cerrar*
+*┗━━━━━━━━━━━━━━━━━━*
 `, footer: `${wm}`, pp,
 title: null,
 buttonText: "𝗔𝗝𝗨𝗦𝗧𝗘𝗦 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢", 
