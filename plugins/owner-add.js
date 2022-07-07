@@ -40,7 +40,7 @@ let handler = async (m, { conn, text, participants }) => {
         m.reply(teks, null, {
             mentions: conn.parseMention(teks)
         })
-        await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, false, 'Hey!! Hola, me presento, soy 𝖀𝖓𝕻𝖙𝖔𝕬𝖉𝖗𝖎𝖍𝕭𝖔𝖙, y soy un Bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitacion para que te agregues, te esperamos!!', jpegThumbnail)
+        await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, false, 'Hey!! Hola, me presento, soy un bot para WhatsApp, una persona del grupo utilizo el comando para añadirte al grupo, pero no pude agregarte, asi que te mando la invitación para que te agregues, te esperamos!!', jpegThumbnail)
     }
 }
 handler.help = ['add', '+'].map(v => 'o' + v + ' @user')
