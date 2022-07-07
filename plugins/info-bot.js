@@ -1,5 +1,5 @@
-import fs from "fs"
-let handler = m => m
+import util from 'util'
+import path from 'path'
 
 handler.all = async function (m) {
 let vn = './media/bot.mp3'
