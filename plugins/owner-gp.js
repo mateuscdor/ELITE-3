@@ -7,8 +7,8 @@ await m.reply(global.wait)
     if (!isROwner) return
     let ar = Object.keys(plugins)
     let ar1 = ar.map(v => v.replace('.js', ''))
-    if (!text) throw `uhm... que plugin buscas?\n\nexample:\n${usedPrefix + command} infobot`
-    if (!ar1.includes(text)) return m.reply(`*🗃️ NO ENCONTRADO!*\n==================================\n\n${ar1.map(v => ' ' + v).join`\n`}`)
+    if (!text) throw `*❗Error❗que plugin buscas?*\n\n*Uso:*\n${usedPrefix + command} creador`
+    if (!ar1.includes(text)) return m.reply(`      *❗PLUGIN NO ENCONTRADO❗*\n==================================\n\n${ar1.map(v => ' ' + v).join`\n`}`)
     let o
     try {
         o = await exec('cat plugins/' + text + '.js')
@@ -22,7 +22,7 @@ await m.reply(global.wait)
 }
 handler.help = ['getplugin'].map(v => v + ' <text>')
 handler.tags = ['owner']
-handler.command = /^(getplugin|gp)$/i
+handler.command = /^(getplugin|gp|plugin|plugins|complementos|complemento)$/i
 handler.rowner = true
 
 export default handler
