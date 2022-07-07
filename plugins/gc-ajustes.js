@@ -27,18 +27,16 @@ year: 'numeric'
  
 const sections = [
 {
-title: `❗Ajustes del grupo❗`,
-title: `❗jus❗`,
+title: `Elige quién puede enviar mensajes a este grupo:`,
 rows: [
-      {title: "🚫 𝗖𝗘𝗥𝗥𝗔𝗥 𝗚𝗥𝗨𝗣𝗢 🚫", description: '𝗣𝗨𝗟𝗦𝗔 𝗔𝗤𝗨𝗜 𝗣𝗔𝗥𝗔 𝗔𝗕𝗥𝗜𝗥 𝗘𝗟 𝗚𝗥𝗨𝗣𝗢', rowId: `.grupo cerrar`},
-      {title: "✅ 𝗔𝗕𝗥𝗜𝗥 𝗚𝗥𝗨𝗣𝗢 ✅", description: '𝗣𝗨𝗟𝗦𝗔 𝗔𝗤𝗨𝗜 𝗣𝗔𝗥𝗔 𝗖𝗘𝗥𝗥𝗔𝗥 𝗘𝗟 𝗚𝗥𝗨𝗣𝗢', rowId: `.grupo abrir`},
+      {title: "*Solo administradores*", description: '*Pulsa ahi para cerrar el grupo ➫*', rowId: `.grupo cerrar`},
+      {title: "*Todos los participantes*", description: '*Pulsa ahi para abrir el grupo ➫*', rowId: `.grupo abrir`},
 ]}, ]
  
 let name = await conn.getName(m.sender)
 const listMessage = {
-text: `𝗘𝗦𝗧𝗘 𝗘𝗦 𝗘𝗟 𝗠𝗘𝗡𝗨 𝗣𝗔𝗥𝗔 𝗔𝗕𝗥𝗜𝗥/𝗖𝗘𝗥𝗥𝗔𝗥 𝗘𝗟 𝗚𝗥𝗨𝗣𝗢
-
-𝗧𝗔𝗠𝗕𝗜𝗘𝗡 𝗣𝗨𝗘𝗗𝗘𝗦 𝗣𝗢𝗡𝗘𝗥:
+text: `*❗MENU ABRIR/CERRAR GRUPO❗*
+*▪️OPCIONES:*:
 .grupo abrir
 .grupo cerrar
 `, footer: `${wm}`, pp,
@@ -57,7 +55,7 @@ let isClose = { // Switch Case Like :v
 'cerrar': 'announcement',
 }[(args[0] || '')]
 conn.groupSettingUpdate(m.chat, isClose)
-{m.reply('*[ ✔ ] 𝙶𝚁𝚄𝙿𝙾 𝙲𝙾𝙽𝙵𝙸𝙶𝚄𝚁𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴*')}
+{m.reply('*[ ✅ ] 𝙶𝚁𝚄𝙿𝙾 𝙲𝙾𝙽𝙵𝙸𝙶𝚄𝚁𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴*')}
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
