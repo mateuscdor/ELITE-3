@@ -127,7 +127,7 @@ global.wm = '•𝗢𝗪𝗡𝗘𝗥 | ✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•�
 global.igfg = '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
-global.multiplier = 999 // The higher, The harder levelup
+global.multiplier = 99 // The higher, The harder levelup
 
 global.rpg = {
   emoticon(string) {
