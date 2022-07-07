@@ -8,7 +8,7 @@ try {
 //let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
 let username = await conn.getName(m.sender)
 let str = `
-* 𝗛𝗢𝗟𝗔 _${username}_ *
+𝗛𝗢𝗟𝗔 _${username}_
 𝗕𝗜𝗘𝗡𝗩𝗘𝗡𝗜𝗗𝗢 𝗔𝗟 𝗠𝗘𝗡𝗨 𝗚𝗥𝗨𝗣𝗢𝗦
 
 ┏━━━━━━━━━━━━━┓
