@@ -1,22 +1,22 @@
-import util from 'util'
-import path from 'path'
+import fs from "fs"
+let handler = m => m
 
-let handler = async (m, { conn}) => {
+handler.all = async function (m) {
+let vn = './media/bot.mp3'
+const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "51938089515-1625305606@g.us" } : {}) },
+message: { 
+orderMessage: { itemCount : -9999999999999, status: 1, surface : 1, message: '𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐎𝐅𝐈𝐂𝐈𝐀𝐋', orderTitle: 'Bang', thumbnail: fs.readFileSync('./Menu2.jpg'), sellerJid: '0@s.whatsapp.net'    
+}}}
+const estiloaudio = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "51938089515-1625305606@g.us" } : {}) },
+message: { 
+"audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "999999999", "ptt": "true"   
+}}}  
 
-let name = conn.getName(m.sender)
-
-let fgac = ["cris ofc", "andrea"]
-let nfg = fgac[Math.floor(Math.random() * fgac.length)] 
-
-conn.sendHydrated(m.chat, `𝗛𝗢𝗟𝗔 𝗚𝗔𝗬 *${name}* \n\n𝗡𝗘𝗖𝗘𝗦𝗜𝗧𝗔𝗦 𝗔𝗬𝗨𝗗𝗔 𝗚𝗜𝗟 *?* 🤣`, igfg, '', 'https://instagram.com/unptoadrih15?igshid=YmMyMTA2M2Y=', 'Sigueme en Instagram', null, null, [
-      ['⦙☰ Menu', '.help'],
-      ['⦙☰ MenuAudios', '.menuaudios'],
-    ], m)
-conn.sendFile(m.chat, null, m, true, {
-type: 'audioMessage', 
-ptt: true
-})
+if (/^bot$/i.test(m.text)) {
+    
+conn.sendButton(m.chat, '*𝙷𝙾𝙻𝙰, ¿𝙲𝙾𝙼𝙾 𝚃𝙴 𝙿𝚄𝙴𝙳𝙾 𝙰𝚈𝚄𝙳𝙰𝚁?*', wm, [['user', `#user`]], 'conversation', { sendEphemeral: true, quoted: estilo })
+conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: estiloaudio })   
 }
-handler.customPrefix = /^(bot|robot)$/i
-handler.command = new RegExp
+return !0
+}
 export default handler
