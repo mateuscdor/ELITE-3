@@ -1,4 +1,4 @@
-const { levelling } = '../lib/levelling.js'
+/*const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 let handler = async (m, { conn, usedPrefix }) => {
 let pp = './Menu2.jpg'
@@ -62,3 +62,4 @@ handler.command = /^(menujuegos|menutops)$/i
 handler.fail = null
 handler.register = true
 export default  handler
+*/
