@@ -4,6 +4,6 @@ let sn = createHash('md5').update(m.sender).digest('hex')
 m.reply(`*𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴 𝚂𝙴𝚁𝙸𝙴:* ${sn}`.trim())}
 handler.help = ['myns']
 handler.tags = ['xp']
-handler.command = /^(ceksn|versn)$/i
+handler.command = /^(ceksn|versn|key)$/i
 handler.register = true
 export default handler
