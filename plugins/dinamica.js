@@ -14,7 +14,7 @@ conn.reply(m.chat, `${text} Hola` || q.text, conn.user.jid, { mentions: users })
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
 body: 'Super Bot WhatsApp',         
-previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
+previewType: 1, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `${yt}`}}})
                       
 //`${text} Hola` || q.text, conn.user.jid, { mentions: users })
