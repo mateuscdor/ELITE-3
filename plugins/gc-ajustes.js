@@ -27,7 +27,8 @@ year: 'numeric'
  
 const sections = [
 {
-title: `*❗Ajustes del grupo❗*`,
+title: `❗Ajustes del grupo❗`,
+title: `❗jus❗`,
 rows: [
       {title: "🚫 𝗖𝗘𝗥𝗥𝗔𝗥 𝗚𝗥𝗨𝗣𝗢 🚫", description: '𝗣𝗨𝗟𝗦𝗔 𝗔𝗤𝗨𝗜 𝗣𝗔𝗥𝗔 𝗔𝗕𝗥𝗜𝗥 𝗘𝗟 𝗚𝗥𝗨𝗣𝗢', rowId: `.grupo cerrar`},
       {title: "✅ 𝗔𝗕𝗥𝗜𝗥 𝗚𝗥𝗨𝗣𝗢 ✅", description: '𝗣𝗨𝗟𝗦𝗔 𝗔𝗤𝗨𝗜 𝗣𝗔𝗥𝗔 𝗖𝗘𝗥𝗥𝗔𝗥 𝗘𝗟 𝗚𝗥𝗨𝗣𝗢', rowId: `.grupo abrir`},
