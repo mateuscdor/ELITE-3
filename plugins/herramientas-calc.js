@@ -31,6 +31,6 @@ throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙵𝙾𝚁𝙼𝙰𝚃𝙾 𝙽𝙾 𝙰𝙳�
 }}
 handler.help = ['calc <expression>']
 handler.tags = ['tools']
-handler.command = /^(calc(ulat(e|or))?|kalk(ulator)?)$/i
+handler.command = ['cal', 'calc', 'calcular', 'calculadora'] 
 handler.exp = 5
 export default handler
