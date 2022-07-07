@@ -1,14 +1,14 @@
 const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 let handler = async (m, { conn, usedPrefix }) => {
-let pp = './Menu2.jpg'
+let pp = './Grup.jpg'
 try {
 } catch (e) {
 } finally {
 //let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
 let username = await conn.getName(m.sender)
 let str = `
-*ミ💖 𝗛𝗢𝗟𝗔 _${username}_ 💖彡*
+* 𝗛𝗢𝗟𝗔 _${username}_ *
 𝗕𝗜𝗘𝗡𝗩𝗘𝗡𝗜𝗗𝗢 𝗔𝗟 𝗠𝗘𝗡𝗨 𝗚𝗥𝗨𝗣𝗢𝗦
 
 ┏━━━━━━━━━━━━━┓
@@ -35,9 +35,9 @@ let str = `
 ┗━━━━━━━━━━━━━┛
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, null, null, null, null, [
-['🗒️𝗠𝗘𝗡𝗨 𝗟𝗜𝗦𝗧𝗔🗒️', '.menu'],
-['🥵𝗖𝗥𝗘𝗔𝗗𝗢𝗥🥵', '.menu'],
-['📮𝗗𝗢𝗡𝗔𝗥📮', '.donar']
+['𝐌𝐄𝐍𝐔', '.menu'],
+['𝐎𝐖𝐍𝐄𝐑', '.creador'],
+['𝐁𝐎𝐓', 'bot']
 ], m)
 }}
 handler.help = ['menugp']
