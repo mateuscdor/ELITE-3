@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   message: {
   documentMessage: {
   title: '𝙳 𝙰 𝚃 𝙰 𝙱 𝙰 𝚂 𝙴', 
-  jpegThumbnail: fs.readFileSync('./Menu1.jpg'),
+  jpegThumbnail: fs.readFileSync('./Cargando.jpg'),
                             }
                           }
                         }
