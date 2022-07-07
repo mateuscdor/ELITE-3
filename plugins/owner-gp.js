@@ -2,9 +2,8 @@ import cp, { exec as _exec } from 'child_process'
 import { promisify } from 'util'
 let exec = promisify(_exec).bind(cp)
 
-await conn.sendMessage(m.chat, { react: { text: '✨', key: m.key } })
-  
 let handler = async (m, { conn, isROwner, usedPrefix, command, text }) => {
+await conn.sendMessage(m.chat, { react: { text: '✨', key: m.key } })
 await m.reply(global.wait)
     if (!isROwner) return
     let ar = Object.keys(plugins)
