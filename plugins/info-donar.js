@@ -24,4 +24,5 @@ conn.sendHydrated(m.chat, donar, wm, null, 'https://www.paypal.me/KeygenVIP', 'ð
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)|donar|paypal|donaciÃ³n|apoyar$/i
+handler.register = true
 export default handler
