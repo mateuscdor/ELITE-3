@@ -1,6 +1,8 @@
 import util from 'util'
 import path from 'path'
 
+let handler = async (m, { conn}) => {
+
 handler.all = async function (m) {
 let vn = './media/bot.mp3'
 const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "51938089515-1625305606@g.us" } : {}) },
