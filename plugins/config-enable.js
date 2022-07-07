@@ -14,7 +14,7 @@ rows: [
 {title: "👾 | 𝙰𝚄𝚃𝙾𝚂𝚃𝙸𝙲𝙺𝙴𝚁", description: "𝚃𝙾𝙳𝙰𝚂 𝙻𝙰𝚂 𝙸𝙼𝙰𝙶𝙴𝙽𝙴𝚂, 𝚅𝙸𝙳𝙴𝙾𝚂 𝙾 𝙴𝙽𝙻𝙰𝙲𝙴𝚂 𝙴𝙽𝚅𝙸𝙰𝙳𝙾𝚂 𝚂𝙴 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝙽 𝙴𝙽 𝚂𝚃𝙸𝙲𝙺𝙴𝚁", rowId: `${usedPrefix + command} autosticker`},
 {title: "🚫 | 𝙰𝙽𝚃𝙸𝚂𝚃𝙸𝙲𝙺𝙴𝚁", description: "𝙴𝙻 𝙱𝙾𝚃 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝚁𝙰 𝙰 𝙲𝚄𝙰𝙻𝚀𝚄𝙸𝙴𝚁 𝙿𝙴𝚁𝚂𝙾𝙽𝙰 𝚀𝚄𝙴 𝙼𝙰𝙽𝙳𝙴 𝚄𝙽 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝚈 𝙽𝙾 𝚂𝙴𝙰 𝙰𝙳𝙼", rowId: `${usedPrefix + command} antisticker`},
 {title: "🤖 | 𝚂𝙸𝙼𝙸", description: "𝙴𝙻 𝙱𝙾𝚃 𝙷𝙰𝙱𝙻𝙰𝚁𝙰 𝙿𝙾𝚁 𝚂𝙸 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙸𝙴𝙽𝙳𝙾 𝙰 𝚃𝙾𝙳𝙾𝚂 𝙻𝙾𝚂 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝙲𝙾𝙼𝙾 𝚂𝙸 𝙵𝚄𝙴𝚁𝙰 𝚂𝙸𝙼𝚂𝙸𝙼𝙸", rowId: `${usedPrefix + command} simi`},
-{title: "🕚 | 𝙰𝙽𝚃𝙸 𝚅𝙸𝙴𝚆𝙾𝙽𝙲𝙴", description: "𝙴𝙻 𝙱𝙾𝚃 𝚁𝙴𝙴𝙽𝚅𝙸𝙰𝚁𝙰 𝚃𝙾𝙳𝙾𝚂 𝙻𝙾𝚂 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝙳𝙴 𝚅𝙴𝚁 1 𝚅𝙴𝚉 𝙲𝙾𝙼𝙾 𝚄𝙽𝙰 𝙵𝙾𝚃𝙾 𝙽𝙾𝚁𝙼𝙰𝙻", rowId: `${usedPrefix + command} pconly`},
+{title: "🕚 | 𝙰𝙽𝚃𝙸 𝚅𝙸𝙴𝚆𝙾𝙽𝙲𝙴", description: "𝙴𝙻 𝙱𝙾𝚃 𝚁𝙴𝙴𝙽𝚅𝙸𝙰𝚁𝙰 𝚃𝙾𝙳𝙾𝚂 𝙻𝙾𝚂 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝙳𝙴 𝚅𝙴𝚁 1 𝚅𝙴𝚉 𝙲𝙾𝙼𝙾 𝚄𝙽𝙰 𝙵𝙾𝚃𝙾 𝙽𝙾𝚁𝙼𝙰𝙻", rowId: `${usedPrefix + command} viewonce`},
 {title: "💬 | 𝙿𝙲𝙾𝙽𝙻𝚈", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙲𝙷𝙰𝚃 𝙿𝚁𝙸𝚅𝙰𝙳𝙾", rowId: `${usedPrefix + command} pconly`},
 {title: "🏢 | 𝙶𝙲𝙾𝙽𝙻𝚈", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix + command} gconly`},
 ]}, ]
