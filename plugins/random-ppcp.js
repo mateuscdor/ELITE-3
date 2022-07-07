@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 let handler = async (m, { conn, command }) => {
 let res = await fetch('https://api.lolhuman.xyz/api/random/ppcouple?apikey=9b817532fadff8fc7cb86862')
 if (res.status != 200) throw await res.text()
@@ -11,3 +11,4 @@ handler.help = ['ppcouple']
 handler.tags = ['internet']
 handler.command = /^(ppcp|ppcouple)$/i
 export default handler
+*/
