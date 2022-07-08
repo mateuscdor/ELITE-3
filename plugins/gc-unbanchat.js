@@ -5,6 +5,6 @@ let handler = async (m, { conn }) => {
   chat.isBanned = false
   m.reply('                       *[❗𝐈𝐍𝐅𝐎❗]* \n\n*𝙴𝚂𝚃𝙴 𝙲𝙷𝙰𝚃 𝙵𝚄𝙴 𝙳𝙴𝚂𝙱𝙰𝙽𝙴𝙰𝙳𝙾 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾.*')
 }
-handler.command = /^unbanchat$/i
+handler.command = /^unbangrupo$/i
 handler.admin = true
 export default handler
