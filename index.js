@@ -17,7 +17,7 @@ say('OWNER\nVIP\nGHOST', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Bot creado por Bruno Sobrino`, {
+say(`Desarrollador GHOST`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
