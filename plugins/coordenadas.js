@@ -63,7 +63,7 @@ const sections = [
 {
 title: `❗LUGARES DE FARMEO - COORDENADAS:`,
 rows: [
-{title: "*🇵🇪 Perú - Chancay.*  ", description: null, rowId: `${usedPrefix}peru`},
+{title: "*🇵🇪 Perú - Chancay.*  ", description: null, rowId: `${usedPrefix}perú`},
 {title: "*🇧🇷 Brazil - Consolacao São Paulo.*  ", description: null, rowId: `${usedPrefix}Brazil`},
 {title: "*🇱🇷 Nueva York - Central Park.*", description: null, rowId: `${usedPrefix}ny`},
 {title: "*🇺🇸 San Francisco - Pier 39.*", description: null, rowId: `${usedPrefix}pier39`},
