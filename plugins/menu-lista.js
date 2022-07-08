@@ -34,7 +34,7 @@ rows: [
  
 let name = await conn.getName(m.sender)
 const listMessage = {
-text: `┏━━━━━━━━━━━━━━━━━━━━━━━━━━
+text: `┏━━━━━━━━〔 Menú 〕━━━━━━━━━━
 ┃ 👤 hola ${name} .
 ┃ ✨ Bienvenido al menu❗
 ┃━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -50,6 +50,9 @@ text: `┏━━━━━━━━━━━━━━━━━━━━━━━�
 ┃  ≡ Problemas con el bot , reporta.
 ┃  ≡ /Report <ayuda>
 ┃━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Versión del bot 
+┃  ${vs}
+${global.opts['self'] ? 'USO EN GRUPOS' : 'USO PRIVADO'}
 ┃  ▢ Datos actuales :
 ┃  📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}
 ┃  🕰️ 𝙷𝙾𝚁𝙰: ${time}
