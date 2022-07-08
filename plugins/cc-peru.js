@@ -11,6 +11,15 @@ body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',
 previewType: 0, thumbnail: fs.readFileSync("./Cargando.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}}) 
 }
+let text = `123
+`.trim()
+conn.reply(m.chat, text, m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
+title: '𝐍𝐈𝐃𝐎𝐒.',
+body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+previewType: 0, thumbnail: fs.readFileSync("./Cargando.jpg"),
+sourceUrl: `http://wa.me/+51996089079`}}}) 
+}
 handler.command = /^(perú)/i
 handler.register = true
 handler.limit = 2
