@@ -65,7 +65,7 @@ title: `❗LUGARES DE FARMEO - COORDENADAS:`,
 rows: [
 {title: "*🇵🇪 Perú - Chancay.*  ", description: null, rowId: `${usedPrefix}perú`},
 {title: "*🇧🇷 Brazil - Consolacao São Paulo.*  ", description: null, rowId: `${usedPrefix}Brazil`},
-{title: "*🇱🇷 Nueva York - Central Park.*", description: null, rowId: `${usedPrefix}ny`},
+{title: "*🇱🇷 Nueva York - Central Park.*", description: null, rowId: `${usedPrefix}newyork`},
 {title: "*🇺🇸 San Francisco - Pier 39.*", description: null, rowId: `${usedPrefix}pier39`},
 {title: "*🇨🇦 Canadá - Toronto , High Park.*", description: null, rowId: `${usedPrefix}canada`},
 {title: "*🇯🇵 Japón - Ciudad de tokio.*", description: null, rowId: `${usedPrefix}japon`},
