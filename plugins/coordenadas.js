@@ -61,7 +61,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 const sections = [
 {
-title: `❗COORDENADAS:`,
+title: `❗LUGARES DE FARMEO - COORDENADAS:`,
 rows: [
 {title: "*🇵🇪 Perú - Chancay.*  ", description: null, rowId: `${usedPrefix}peru`},
 {title: "*🇱🇷 Nueva York - Central Park.*", description: null, rowId: `${usedPrefix}ny`},
@@ -77,9 +77,9 @@ rows: [
 {title: "*🇰🇮 Kiribati - London.*", description: null, rowId: `${usedPrefix}kiribati`},    
 {title: "*🇪🇬 Egipto - Cairo.*", description: null, rowId: `${usedPrefix}egipto`},    
 {title: "*🇪🇸 España - Zaragoza.*", description: null, rowId: `${usedPrefix}zaragoza`},    
-{title: "*🇪🇸 Parque del Estadio Insular - Gran Canarias.*", description: null, rowId: `${usedPrefix}islacanarias`},    
+{title: "*🇪🇸 Parque Estadio Insular - Gran Canarias.*", description: null, rowId: `${usedPrefix}islacanarias`},    
 {title: "*🇭🇺 Hungría - Budapest.*", description: null, rowId: `${usedPrefix}budapest`},    
-{title: "*🇳🇿 Nueva Zelanda - Parque Noroeste Wellington.*", description: null, rowId: `${usedPrefix}nuevazelanda`},    
+{title: "*🇳🇿 Nueva Zelanda - P. Noroeste Wellington.*", description: null, rowId: `${usedPrefix}nuevazelanda`},    
 ]}, ]
 //let name = await conn.getName(m.sender)
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -115,7 +115,7 @@ footer: `╭━━〔 *${wm}* 〕━━⬣
 ╰━━━━━━━━━━━━━━━━━━━━⬣
 ${wm}`,
 title: null,
-buttonText: "𝙋𝙍𝙀𝙎𝙄𝙊𝙉𝙀 𝘼𝙌𝙐Í | 𝙋𝙍𝙀𝙎𝙎 𝙃𝙀𝙍𝙀", 
+buttonText: "PULSE AQUI ❗", 
 sections }
 
 await conn.sendMessage(m.chat, listMessage)
