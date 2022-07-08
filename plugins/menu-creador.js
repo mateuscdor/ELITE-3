@@ -56,4 +56,5 @@ handler.tags = ['main']
 handler.command = /^(menuowner|menucreador|memuowner|memucreador|omenu|omemu)$/i
 handler.fail = null
 handler.register = true
+handler.admin = true
 export default  handler
