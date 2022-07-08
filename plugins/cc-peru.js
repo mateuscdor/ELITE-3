@@ -14,4 +14,6 @@ previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}})   
 }
 handler.command = /^(perú)/i
+handler.register = true
+handler.limit = 2
 export default handler
