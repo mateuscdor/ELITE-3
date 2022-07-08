@@ -35,7 +35,7 @@ rows: [
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: `┏━━━━━━━━━━━━━━━━━━━━
-┃ 👤hola ${name} , bienvenido al menu❗
+┃ 👤 ${ucapan()} hola ${name} , bienvenido al menu❗
 ┃  ▢ Información basica :
 ┃  ≡ Creador del bot : ✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹
 ┃  ≡ N° del creador : wa.me/51996089079 (No bot)
