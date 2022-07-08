@@ -34,7 +34,7 @@ rows: [
  
 let name = await conn.getName(m.sender)
 const listMessage = {
-text: `┏━━━━━━━━〔 Menú 〕━━━━━━━━━━━
+text: `┏━━━━━━━━〔 Menú 〕━━━━━━━━━━
 ┃ 👤 hola ${name} .
 ┃ ✨ Bienvenido al menu❗
 ┃━━━━━━━━━━━━━━━━━━━━━━━━━━
