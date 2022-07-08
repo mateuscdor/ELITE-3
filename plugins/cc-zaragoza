@@ -12,7 +12,7 @@ body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',
 previewType: 0, thumbnail: fs.readFileSync("./Cargando.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}}) 
 }
-handler.command = /^(zaragosa)/i
+handler.command = /^(zaragoza)/i
 handler.register = true
 handler.limit = 2
 export default handler
