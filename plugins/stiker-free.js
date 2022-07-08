@@ -47,6 +47,7 @@ else throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙻𝙾 𝚂𝙸𝙴𝙽𝚃𝙾, 𝙾�
 handler.help = ['stikerfree (caption|reply media)', 'stikerfree <url>', 'stikergiffree (caption|reply media)', 'stikergiffree <url>']
 handler.tags = ['stickerfree']
 handler.command = /^s(tic?kerfree)?(giffree)?(wm)?$/i
+handler.register = true
 export default handler
 
 const isUrl = (text) => {
