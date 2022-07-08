@@ -90,7 +90,7 @@ let username = conn.getName(who)
 
 const listMessage = {
 text: `❒═════「 🤖Assistant 」════❒
-*👤 ${username} bienvenido al minimenú coordenadas.*`,
+*👤 ${username} bienvenido al minimenú coordenadas.*,
 
 
 
