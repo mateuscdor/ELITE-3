@@ -10,8 +10,6 @@ title: '𝐍𝐈𝐃𝐎𝐒.',
 body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
 previewType: 0, thumbnail: fs.readFileSync("./Cargando.jpg"),
 sourceUrl: `http://wa.me/+51996089079`}}}) 
-m.reply(`hola`) }}
- await m.reply(`hola`) }  
 }
 handler.command = /^(perú)/i
 handler.register = true
