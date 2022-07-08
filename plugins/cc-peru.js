@@ -1,7 +1,7 @@
 import fs from 'fs'
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 await conn.sendMessage(m.chat, { react: { text: '🚀', key: m.key } })  
-
+await m.reply(global.wait)
 let text = `🚨 NIDOS   MUNDIALES 🚨*
  	📲 OSH	🇺🇸	❖	34.0152,-118.2869	
 🅖
