@@ -89,13 +89,12 @@ let username = conn.getName(who)
 
 
 const listMessage = {
-text: `❒═════「 🤖Assistant 」════❒
+text: `❒═════「 *🤖Assistant* 」════❒
+
 *👤 ${username} bienvenido al minimenú coordenadas.*,
 
-
-
-┃✪ *FECHA ➺ ${week}, ${date}*
-${wm}`,
+*FECHA ➮ ${week}, ${date}*
+${abc}`,
 title: null,
 buttonText: "PULSE AQUI ❗", 
 sections }
