@@ -13,7 +13,7 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('Mystic - Bot\nWhatsApp Bot MD', {
+say('OWNER\nVIP\nGHOST', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
