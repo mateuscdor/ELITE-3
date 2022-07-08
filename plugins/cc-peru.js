@@ -1,8 +1,8 @@
 import fs from 'fs'
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
-let text = `
-Cargando info...
-*🚨 NIDOS   MUNDIALES 🚨*
+await conn.sendMessage(m.chat, { react: { text: '🚀', key: m.key } })  
+
+let text = `🚨 NIDOS   MUNDIALES 🚨*
  	📲 OSH	🇺🇸	❖	34.0152,-118.2869	
 🅖
 `.trim()   
