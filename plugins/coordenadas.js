@@ -93,7 +93,8 @@ text: `❒═════「 *🤖Assistant* 」════❒
 
 *👤 ${username} bienvenido al minimenú coordenadas.*,
 
-*FECHA ➮ ${week}, ${date}*
+*Fecha ➮ ${week}, ${date}*
+*Hora  ➮ ${time}*
 ${abc}`,
 title: null,
 buttonText: "PULSE AQUI ❗", 
