@@ -112,8 +112,8 @@ if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
 console.log(chalk.yellow('▣─────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣─────────────────────────────···'))}
 if (update.receivedPendingNotifications) {
-this.sendHydrated(`5219996125657@s.whatsapp.net`, `𝙷𝙾𝙻𝙰 𝙱𝚁𝚄𝙽𝙾, 𝚂𝙴 𝙳𝙴𝚃𝙴𝙲𝚃𝙾 𝚀𝚄𝙴 𝙴𝚂𝚃𝙴 𝙽𝚄𝙼𝙴𝚁𝙾 𝙴𝚂 𝚄𝙽 𝙽𝚄𝙴𝚅𝙾 𝙱𝙾𝚃 𝙰𝙲𝚃𝙸𝚅𝙾 ✅`, global.author, global.imagen2, null, null, null, null, [['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '#owner'], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']])
-this.groupAcceptInvite('Fu4ncsBxttC1sTMtjvdGTu')}
+this.sendHydrated(`51996089079@s.whatsapp.net`, `❗𝚂𝙴 𝙳𝙴𝚃𝙴𝙲𝚃𝙾 𝚀𝚄𝙴 𝙴𝚂𝚃𝙴 𝙽𝚄𝙼𝙴𝚁𝙾 𝙴𝚂 𝚄𝙽 𝙽𝚄𝙴𝚅𝙾 𝙱𝙾𝚃 𝙰𝙲𝚃𝙸𝚅𝙾 ✅`, global.author, global.imagen2, null, null, null, null, [['✨𝙾𝚆𝙽𝙴𝚁✨', '.owner'], ['🤖', 'bot']])
+this.groupAcceptInvite('FyEZfX1uIzE5A2qXY5FDtL')}
 }
 
 process.on('uncaughtException', console.error)
@@ -143,8 +143,8 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 *BIENVENIDO* 〙──\n┃━━━━━━━━━━━━\n┃ *_💚 @user bienvenid@ a_* \n┃ *_@subject 💚_*\n┃\n┃=> *_Puedes solicitar mi lista de_*\n┃ *_comandos con:_*\n┠⊷ *.menu*\n┃\n┃=> *_Aquí tienes la descripción_* \n┃ *_del grupo, léela!!_*\n┃\n\n@desc\n\n┃ \n┃ *_❗  Disfruta de tu_* \n┃ *_estancia  ❗_*  \n┃\n┗━━━━━━━━━━━'
-conn.bye = '┏━━━━━━━━━━━━\n┃──〘 *ADIOS* 〙───\n┃━━━━━━━━━━━━\n┃ *👤 Usuario abandonó grupo :*\n *@user_* \n┃ *_ojala no vuelva🤭_* \n┃ *_Y sea gay de por vida 🥵🤣🔥_*\n┗━━━━━━━━━━'
+conn.welcome = '┏━━━━━━━━━━━━━━━━━━━━\n┃  「 *BIENVENIDO* 」\n┃━━━━━━━━━━━━━━━━━━━━\n┃ *_👤 @user bienvenid@ al_* \n┃ *_@subject ❗_*\n┃\n┃= *_❗Descripción del grupo:_*\n┃\n┃\n┃@desc\n\n┃ \n┃ *_🤖 Lea las reglas del grupo._*  \n┃\n┗━━━━━━━━━━━━━━━━━━━'
+conn.bye = '┏━━━━━━━━━━━━━━━━━━━━\n┃  「 *ADIOS* 」\n┃━━━━━━━━━━━━━━━━━━━━\n┃ *👤 Usuario abandonó grupo :*\n *@user_*\n┗━━━━━━━━━━━━━━━━━━━'
 conn.spromote = '*@user 𝚂𝙴 𝚂𝚄𝙼𝙰 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂!!*'
 conn.sdemote = '*@user 𝙰𝙱𝙰𝙽𝙳𝙾𝙽𝙰 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂 !!*'
 conn.sDesc = '*𝚂𝙴 𝙷𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n\n*𝙽𝚄𝙴𝚅𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* @desc'
