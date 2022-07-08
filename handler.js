@@ -347,7 +347,7 @@ export async function handler(chatUpdate) {
                 global.db.data.chats[m.chat] = {}
             if (chat) {
                 if (!('isBanned' in chat))
-                    chat.isBanned = false
+                    chat.isBanned = true
                 if (!('welcome' in chat))
                     chat.welcome = true
                 if (!('detect' in chat))
