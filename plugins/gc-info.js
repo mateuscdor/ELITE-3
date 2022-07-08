@@ -2,7 +2,7 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
 await conn.sendMessage(m.chat, { react: { text: '✨', key: m.key } })
 
 const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/avatar_contact.png'
-const { isBanned, welcome, viewonce, simi, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
+const { isBanned, autolevelup, welcome, viewonce, simi, detect, sWelcome, sBye, sPromote, sDemote, antiLink, antiLink2, modohorny, autosticker, audios, delete: del } = global.db.data.chats[m.chat]
 const groupAdmins = participants.filter(p => p.admin)
 const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
 const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
@@ -39,6 +39,7 @@ ${listAdmin}
 ➮ 𝚂𝙸𝙼𝙸 ${simi ? '✅' : '❌'}
 ➮ 𝙰𝚄𝚃𝙾𝚂𝚃𝙸𝙲𝙺𝙴𝚁: ${autosticker ? '✅' : '❌'} 
 ➮ 𝙰𝚄𝙳𝙸𝙾𝚂: ${audios ? '✅' : '❌'} 
+➮ 𝙰𝚄𝚃𝙾𝙻𝙴𝚅𝙴𝙻: ${autolevelup ? '✅' : '❌'} 
 `.trim()
 conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
