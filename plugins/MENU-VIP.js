@@ -57,10 +57,10 @@ text: `┏━━━━━━━━〔 Menú 〕━━━━━━━━━━
 ┃    ${global.opts['self'] ? 'CHAT PRIVADO •' : 'GRUPOS'}
 ┃━━━━━━━━━━━━━━━━━━━━━━━━━━
 ┃  ▢ Datos actuales :
-┃  💎 𝙳𝙸𝙰𝙼𝙾𝙽𝙳 : %limit Limit
+┃  💎 𝙳𝙸𝙰𝙼𝙾𝙽𝙳 : ${limit}
 ┃  🌟 𝙴𝚇𝙿𝙴𝚁𝙸𝙴𝙽𝙲𝙸𝙰 : ${totalexp}
 ┃  🎖️ 𝚁𝙾𝙻 : ${role}
-┃  🌀 𝙻𝙴𝚅𝙴𝙻 : %level (%exp / %maxexp)
+┃  🌀 𝙻𝙴𝚅𝙴𝙻 : ${level}
 ┃  📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}
 ┃  🕰️ 𝙷𝙾𝚁𝙰: ${time}
 ┃  📈 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}
