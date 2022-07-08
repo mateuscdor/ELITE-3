@@ -64,6 +64,7 @@ const sections = [
 title: `❗LUGARES DE FARMEO - COORDENADAS:`,
 rows: [
 {title: "*🇵🇪 Perú - Chancay.*  ", description: null, rowId: `${usedPrefix}peru`},
+{title: "*🇧🇷 Brazil - Consolacao São Paulo.*  ", description: null, rowId: `${usedPrefix}Brazil`},
 {title: "*🇱🇷 Nueva York - Central Park.*", description: null, rowId: `${usedPrefix}ny`},
 {title: "*🇺🇸 San Francisco - Pier 39.*", description: null, rowId: `${usedPrefix}pier39`},
 {title: "*🇨🇦 Canadá - Toronto , High Park.*", description: null, rowId: `${usedPrefix}canada`},
@@ -88,31 +89,12 @@ let username = conn.getName(who)
 
 
 const listMessage = {
-text: `🔰 *¡HOLA | HI!* ${username}`,
-footer: `╭━━〔 *${wm}* 〕━━⬣
-┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
-┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
-┃✪ *NIVEL | LEVEL ➺ ${level}*
-┃✪ *ROL ➺ ${role}*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *FECHA ➺ ${week}, ${date}*
-┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🌟🌟🌟🌟🌟🌟🌟🌟🌟
-╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
+text: `❒═════「 🤖Assistant 」════❒
+*👤 ${username} bienvenido al minimenú coordenadas.*`,
 
-╭━━〔 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄Ó𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 〕━━⬣
-┃ *PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*
-┃ *PRESS THIS MESSAGE TO GO TO THE MENU.*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃💫➺ _${usedPrefix}cuentas | cuentasgb | accounts_
-┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
-┃💫➺ _${usedPrefix}listagrupos | grouplist_
-┃💫➺ _${usedPrefix}estado | heybot | status_
-┃💫➺ _${usedPrefix}info | infobot_
-┃💫➺ _${usedPrefix}creador | owner_
-┃💫➺ _${usedPrefix}velocidad | ping_
-┃💫➺ _Bot_ 
-╰━━━━━━━━━━━━━━━━━━━━⬣
+
+
+┃✪ *FECHA ➺ ${week}, ${date}*
 ${wm}`,
 title: null,
 buttonText: "PULSE AQUI ❗", 
