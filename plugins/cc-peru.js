@@ -2,8 +2,8 @@ import fs from 'fs'
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 await conn.sendMessage(m.chat, { react: { text: '🚀', key: m.key } })  
 await m.reply(global.wait)
-let text = `hola
-``12`.trim()   
+let text = `*-11.562800,-77.270000*
+`.trim()   
 conn.reply(m.chat, text, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝐍𝐈𝐃𝐎𝐒.',
