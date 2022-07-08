@@ -35,7 +35,7 @@ rows: [
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: `┏━━━━━━━━━━━━━━━━━━━━
-┃ 👤 ${ucapan()} ${name} , bienvenido al menu❗
+┃ 👤hola ${name} , bienvenido al menu❗
 ┃  ▢ Información basica :
 ┃  ≡ Creador del bot : ✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹
 ┃  ≡ N° del creador : wa.me/51996089079 (No bot)
@@ -47,8 +47,7 @@ text: `┏━━━━━━━━━━━━━━━━━━━━
 ┃  📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}
 ┃  📈 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}
 ┃  📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾𝚂 : ${rtotalreg}
-┗━━━━━━━━━━━━━━━━━━━━
-`, footer: `${wm}`, pp,
+┗━━━━━━━━━━━━━━━━━━━━`, footer: `${wm}`, pp,
 title: null,
 buttonText: "PULSA AQUI", 
 sections }
