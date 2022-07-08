@@ -87,7 +87,6 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let mentionedJid = [who]
 let username = conn.getName(who)
 
-
 const listMessage = {
 text: `❒═════「 *🤖Assistant* 」════❒
 
@@ -101,6 +100,7 @@ buttonText: "PULSE AQUI ❗",
 sections }
 
 await conn.sendMessage(m.chat, listMessage)
+await m.reply(global.wait)
 }
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
