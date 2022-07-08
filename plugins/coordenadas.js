@@ -86,21 +86,22 @@ rows: [
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-
+await m.reply(global.wait)
 const listMessage = {
 text: `❒═════「 *🤖Assistant* 」════❒
 
-*👤 ${username} bienvenido al minimenú coordenadas.*,
+*👤 ${username} bienvenido al minimenú coordenadas.*
 
-*Fecha ➮ ${week}, ${date}*
-*Hora  ➮ ${time}*
+*▢ Fecha ➮ ${week}, ${date}*
+*▢ Hora  ➮ ${time}*
+
 ${abc}`,
 title: null,
 buttonText: "PULSE AQUI ❗", 
 sections }
 
 await conn.sendMessage(m.chat, listMessage)
-await m.reply(global.wait)
+
 }
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
