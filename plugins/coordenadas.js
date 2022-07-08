@@ -106,6 +106,8 @@ await m.reply(global.wait)
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(cc|coordenadas|coordenada)$/i
+handler.register = true
+handler.limit = 5
 export default handler
 
 const more = String.fromCharCode(8206)
