@@ -48,6 +48,7 @@ handler.help = ['stikerfree (caption|reply media)', 'stikerfree <url>', 'stikerg
 handler.tags = ['stickerfree']
 handler.command = /^s(tic?kerfree)?(giffree)?(wm)?$/i
 handler.register = true
+handler.limit = 1
 export default handler
 
 const isUrl = (text) => {
