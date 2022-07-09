@@ -48,7 +48,7 @@ let caption = `
 
 *≡ DESCRIPCION:*
 ▢ ${result}
-▢ Generacion: ${json.generation}
+▢ Generación: 「${json.generation}」
 `.trim()
 
 conn.sendFile(m.chat, link, null, caption, m)}
