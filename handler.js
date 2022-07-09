@@ -693,7 +693,7 @@ export async function handler(chatUpdate) {
                         stat.last = now
                     if (!isNumber(stat.lastSuccess))
                         stat.lastSuccess = m.error != null ? 0 : now
-                } else
+                   } else
                     stat = stats[m.plugin] = {
                         total: 1,
                         success: m.error != null ? 0 : 1,
@@ -710,7 +710,7 @@ export async function handler(chatUpdate) {
         }
 
         try {
-            if (!opts['noprint']) await (await import(./lib/print.js)).default(m, this)
+            if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
         } catch (e) {
             console.log(m, m.quoted, e)
         }
