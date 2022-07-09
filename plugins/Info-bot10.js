@@ -22,6 +22,6 @@ type: 'audioMessage',
 ptt: true
 })
 }
-handler.customPrefix = /^(ayuda|help|)$/i
+handler.customPrefix = /^(ayuda|help)$/i
 handler.command = new RegExp
 export default handler
