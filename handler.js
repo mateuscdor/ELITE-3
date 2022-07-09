@@ -659,7 +659,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + '*diamantes usado.*')
+                        m.reply(+m.limit + '*💎 diamantes usado.*')
                 }
                 break
             }
@@ -752,9 +752,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || '𝗛𝗶 𝗺𝘆 𝗹𝗼𝘃𝗲𝗹𝘆 𝗳𝗿𝗶𝗲𝗻𝗱, @user!\n𝙒𝙚 𝘼𝙧𝙚 𝙒𝙚𝙡𝙘𝙤𝙢𝙞𝙣𝙜 𝙔𝙤𝙪 𝙏𝙤  *@subject* \n\n@desc\𝙒𝙚 𝙖𝙧𝙚 𝙥𝙡𝙚𝙖𝙨𝙚𝙙 𝙩𝙝𝙖𝙩 𝙪 𝙟𝙤𝙞𝙣𝙚𝙙 𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥 𝙖𝙣𝙙 𝙗𝙚𝙘𝙖𝙢𝙚 𝙤𝙪𝙧 𝙛𝙖𝙢𝙞𝙡𝙮 𝙢𝙚𝙢𝙗𝙚𝙧. 𝙊𝙣 𝙗𝙚𝙝𝙖𝙡𝙛 𝙤𝙛 𝙤𝙪𝙧 𝙛𝙖𝙢𝙞𝙡𝙮, 𝙬𝙚 𝙖𝙡𝙡 𝙖𝙧𝙚 𝙡𝙤𝙤𝙠𝙞𝙣𝙜 𝙛𝙤𝙧𝙬𝙖𝙧𝙙 𝙩𝙤 𝙨𝙚𝙚 𝙬𝙝𝙖𝙩 𝙮𝙤𝙪 𝙖𝙘𝙝𝙞𝙚𝙫𝙚 𝙝𝙚𝙧𝙚!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
                             (chat.sBye || this.bye || conn.bye || '𝗕𝘆𝗲 𝗺𝘆 𝗹𝗼𝘃𝗲𝗹𝘆 𝗳𝗿𝗶𝗲𝗻𝗱 @user!\n𝗗𝗼𝗻𝘁 𝗰𝗼𝗺𝗲 𝗯𝗮𝗰𝗸 𝗵𝗲𝗿𝗲')).replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-                            this.sendButton(id, text, groupMetadata.subject, apii.data,                                                       'http://wa.me/+51996089079', '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹', null, null, [ 
-                            [[(action == 'add' ?'Bienvenido' : 'Bye'), '.stikerfree'], ['👤 User.', '.perfil ']], '',  { mentions: [user] })
-                        }
+                            this.sendButton(id, text, groupMetadata.subject, apii.data,[[(action == 'add' ?'Bienvenido' : 'Bye'), '.stikerfree'], ['👤 User.', '.perfil ']], '',  { mentions: [user] })
                 }
             }
             break
