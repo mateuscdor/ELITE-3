@@ -249,7 +249,7 @@ export async function handler(chatUpdate) {
                     warn: 0,
                     level: 0,
                     role: 'Beginner',
-                    autolevelup: false,
+                    autolevelup: true,
 
                     money: 0,
                     net: 0,
