@@ -19,7 +19,7 @@ let result4 = await translate(`${json.abilities}`, { tld, to: 'es', })
 let result5 = await translate(`${json.gender}`, { tld, to: 'es', })
 let result6 = await translate(`${json.egg_groups}`, { tld, to: 'es', })
 let caption = `
-Nombre: ${json.name}
+Nobre: ${json.name}
 ID: ${json.id}
 Tipo: ${result3}
 Especies: ${result2}
@@ -39,7 +39,7 @@ Sp def: ${json.stats.sp_def}
 Velocidad: ${json.stats.speed}
 Total: ${json.stats.total}
 
-FAMILIA
+FAMILIA:
 Etapa de evolución: ${json.family.evolutionStage}
 Línea Evolución: ${json.family.evolutionLine}
 
