@@ -3,7 +3,9 @@ import translate from 'translate-google-api'
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `¿Y el pokemon? Ingresa el nombre de un pokemon`;
+await conn.sendMessage(m.chat, { react: { text: '✨', key: m.key } })
+await m.reply(global.wait)
+if (!text) throw `*🤖 ¿Y el pokémon? Ingresa el nombre de un pokémon.*`;
 let res = await fetch(API("https://some-random-api.ml", "/pokedex", { pokemon: text }))
 const res2 = await googleImage(text)
 let image = res2.getRandom()
@@ -19,33 +21,34 @@ let result4 = await translate(`${json.abilities}`, { tld, to: 'es', })
 let result5 = await translate(`${json.gender}`, { tld, to: 'es', })
 let result6 = await translate(`${json.egg_groups}`, { tld, to: 'es', })
 let caption = `
-Nombre: ${json.name}
-ID: ${json.id}
-Tipo: ${result3}
-Especies: ${result2}
-Habilidades: ${result4}
-Altura: ${json.height}
-Peso: ${json.weight}
-Experiencia básica: ${json.base_experience}
-Género: ${result5}
-Grupos de huevos: ${result6}
+━━━━━━━━━〔 𝑮𝑶 〕━━━━━━━
+▢ Nombre: ${json.name}
+▢ ID: ${json.id}
+▢ Tipo: ${result3}
+▢ Especies: ${result2}
+▢ Habilidades: ${result4}
+▢ Altura: ${json.height}
+▢ Peso: ${json.weight}
+▢ Experiencia básica: ${json.base_experience}
+▢ Género: ${result5}
+▢ Grupos de huevos: ${result6}
 
-ESTADÍSTICAS
-Hp: ${json.stats.hp}
-Ataque: ${json.stats.attack}
-Defensa: ${json.stats.defense}
-Sp atk: ${json.stats.sp_atk}
-Sp def: ${json.stats.sp_def}
-Velocidad: ${json.stats.speed}
-Total: ${json.stats.total}
+*≡ ESTADÍSTICAS:*
+▢ Hp: ${json.stats.hp}
+▢ Ataque: ${json.stats.attack}
+▢ Defensa: ${json.stats.defense}
+▢ Sp atk: ${json.stats.sp_atk}
+▢ Sp def: ${json.stats.sp_def}
+▢ Velocidad: ${json.stats.speed}
+▢ Total: ${json.stats.total}
 
-FAMILIA:
-Etapa de evolución: ${json.family.evolutionStage}
-Línea Evolución: ${json.family.evolutionLine}
+*≡ FAMILIA:*
+▢ Etapa de evolución: ${json.family.evolutionStage}
+▢ Línea Evolución: ${json.family.evolutionLine}
 
-DESCRIPCION:
-${result}
-Generacion: ${json.generation}
+*≡ DESCRIPCION:*
+▢ ${result}
+▢ Generacion: ${json.generation}
 `.trim()
 
 conn.sendFile(m.chat, link, null, caption, m)}
@@ -54,4 +57,6 @@ conn.sendFile(m.chat, link, null, caption, m)}
 handler.help = ["pokemon", "catch"].map((v) => v + " <pokemon>");
 handler.tags = ["internet"];
 handler.command = /^(pokemon|pokedex|catch|c|Pokémon)$/i;
+handler.limit = 10
+handler.register = true
 export default handler
