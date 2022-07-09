@@ -732,7 +732,7 @@ export async function handler(chatUpdate) {
         if (opts['autoread'])
             await this.readMessages([m.key])
         
-        if (!m.fromMem && m.text.match(/(diamantes|usado)/gi)) {
+        if (!m.fromMem && m.text.match(/(1|2|3|4|5|6|7|8|9)/gi)) {
         let emot = pickRandom(["💎", "💎"])
         this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
         function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
