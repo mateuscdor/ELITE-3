@@ -6,7 +6,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
 let teks = text ? text : cc.text
 for (let id of groups) { 
-conn.sendButton(id, `*╔══❰ 𝐂𝐎𝐌𝐔𝐍𝐈𝐂𝐀𝐃𝐎 ❱══╗*\n*║*\n*╠❧* ${text}\n*║*\n*╚══════════════╝*`, '𝙀𝙎𝙏𝙀 𝙀𝙎 𝙐𝙉 𝘾𝙊𝙈𝙐𝙉𝙄𝘾𝘼𝘿𝙊 𝙊𝙁𝙄𝘾𝙄𝘼𝙇\n' + wm, fs.readFileSync('./Grup.jpg'), [['🤖 𝙾𝚆𝙽𝙴𝚁 🤖', '.owner'],['💎 𝙳𝙾𝙽𝙰𝚁 💎', '.donasi']], false, { 
+conn.sendButton(id, `*❒════「 *❗Comunicado❗* 」═══❒*\n* ${text}*\n*❒════「 *🤖Assistant* 」═══❒*`, '*• Comunicado Oficial*\n' + wm, fs.readFileSync('./Grup.jpg'), [['🤖 Owner 🤖', '.Propietario'],['👤 User', '.perfil']], false, { 
 contextInfo: { externalAdReply: {
 title: 'ᴄᴏᴍᴜɴɪᴄᴀᴅᴏ ᴏғɪᴄɪᴀʟ ᴀ ɢʀᴜᴘᴏs',
 body: '𝐁𝐎𝐓', 
