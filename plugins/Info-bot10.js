@@ -13,7 +13,7 @@ let name = conn.getName(m.sender)
 let fgac = ["cris ofc", "andrea"]
 let nfg = fgac[Math.floor(Math.random() * fgac.length)] 
 
-conn.sendHydrated(m.chat, `*👤hola ${name}* \n\n *necesita ayuda *`, igfg, '', 'http://wa.me/51938 089515', '🤖', null, null, [
+conn.sendHydrated(m.chat, `*👤hola ${name}* \n\n *necesita ayuda?*`, igfg, '', 'http://wa.me/51938 089515', '🤖', null, null, [
       ['⦙☰ Menu', '.menu'],
       ['⦙☰ Exp', '.xpgr'],
     ], m)
@@ -22,6 +22,6 @@ type: 'audioMessage',
 ptt: true
 })
 }
-handler.customPrefix = /^(abz|robopt)$/i
+handler.customPrefix = /^(ayuda|help|)$/i
 handler.command = new RegExp
 export default handler
