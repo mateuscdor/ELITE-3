@@ -7,7 +7,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	let namae = conn.getName(m.sender)
 	const sections = [
 	{
-	title: "Selecciona tu edad aqui",
+	title: "❗SELECCIONA TU EDAD AQUI❗",
 	rows: [
 	    {title: "Años Random", rowId: '.reg ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
 	]
