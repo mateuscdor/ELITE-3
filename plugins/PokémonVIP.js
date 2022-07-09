@@ -19,7 +19,7 @@ let result4 = await translate(`${json.abilities}`, { tld, to: 'es', })
 let result5 = await translate(`${json.gender}`, { tld, to: 'es', })
 let result6 = await translate(`${json.egg_groups}`, { tld, to: 'es', })
 let caption = `
-Nobre: ${json.name}
+Nombre: ${json.name}
 ID: ${json.id}
 Tipo: ${result3}
 Especies: ${result2}
