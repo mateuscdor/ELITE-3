@@ -77,6 +77,7 @@ handler.tags = ['group', 'owner']
 handler.command = /^(menu|menú|help|allmenu|m|\?)$/i
 handler.exp = 50
 handler.register = true
+handler.limit = 3
 export default handler
 
 function clockString(ms) {
