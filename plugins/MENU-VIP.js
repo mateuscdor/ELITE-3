@@ -31,7 +31,7 @@ rows: [
       {title: "✨ 𝗖𝗥𝗘𝗔𝗗𝗢𝗥 ✨", description: null, rowId: `${usedPrefix}creador`},
       {title: "👑 𝙈𝙀𝙉𝙐 𝗖𝗥𝗘𝗔𝗗𝗢𝗥 👑", description: null, rowId: `${usedPrefix}menucreador`},
 ]}, ]
- 
+await m.reply(global.wait)
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: `┏━━━━━━━━〔 Menú 〕━━━━━━━━━━
