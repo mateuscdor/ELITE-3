@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Pokemonnya mana?`;
@@ -48,3 +48,4 @@ handler.tags = ["internet"];
 handler.command = /^(pokemon|pokedex|catch|c|Pokémon)$/i;
 
 export default handler
+*/
