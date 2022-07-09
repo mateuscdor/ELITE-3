@@ -5,6 +5,7 @@ import { webp2png } from '../lib/webp2mp4.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 await conn.sendMessage(m.chat, { react: { text: '✨', key: m.key } })
+await m.reply(global.wait)
   
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
