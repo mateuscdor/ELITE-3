@@ -724,6 +724,20 @@ export async function handler(chatUpdate) {
     }
 }
 
+        try {
+            if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
+        } catch (e) {
+            console.log(m, m.quoted, e)
+        }
+        if (opts['autoread'])
+            await this.readMessages([m.key])
+        
+        if (!m.fromMem && m.text.match(/(diamantes|usado)/gi)) {
+        let emot = pickRandom(["💎", "💎"])
+        this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
+        function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
+    }
+}
 /**
  * Handle groups participants update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate 
