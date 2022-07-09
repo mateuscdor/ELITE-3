@@ -693,7 +693,7 @@ export async function handler(chatUpdate) {
                         stat.last = now
                     if (!isNumber(stat.lastSuccess))
                         stat.lastSuccess = m.error != null ? 0 : now
-                   } else
+                } else
                     stat = stats[m.plugin] = {
                         total: 1,
                         success: m.error != null ? 0 : 1,
