@@ -659,7 +659,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply([❗] +m.limit + '*diamantes usado.*')
+                        m.reply( +m.limit + '*diamantes usado.*')
                 }
                 break
             }
