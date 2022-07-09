@@ -82,6 +82,6 @@ const listMessage = {
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
 
-handler.command = /^(verify|verificar|reg(ister)?)$/i
+handler.command = /^(verify|registrar|verificar|reg(ister)?)$/i
 
 export default handler
