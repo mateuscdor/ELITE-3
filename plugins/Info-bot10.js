@@ -1,6 +1,11 @@
 import util from 'util'
 import path from 'path'
 
+import fs from "fs"
+let handler = m => m
+handler.all = async function (m) {
+let vn = './media/bot.mp3'
+
 let handler = async (m, { conn}) => {
 await conn.sendMessage(m.chat, { react: { text: '✨', key: m.key } })
 let name = conn.getName(m.sender)
