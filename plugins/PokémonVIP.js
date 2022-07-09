@@ -57,6 +57,6 @@ conn.sendFile(m.chat, link, null, caption, m)}
 handler.help = ["pokemon", "catch"].map((v) => v + " <pokemon>");
 handler.tags = ["internet"];
 handler.command = /^(pokemon|pokedex|catch|c|Pokémon)$/i;
-handler.limit = 10
+handler.limit = 7
 handler.register = true
 export default handler
