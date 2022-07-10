@@ -11,7 +11,6 @@ handler.help = handler.alias = ['apkdl']
 handler.tags = ['downloader']
 handler.command = /^(playstore1)$/i
 
-export default handler
 
 async function apkDl(url) {
 	let res = await fetch('https://apk.support/gapi/index.php', {
@@ -25,3 +24,4 @@ async function apkDl(url) {
 	let mimetype = (await fetch(download, { method: 'head' })).headers.get('content-type')
 	return { fileName, mimetype, download }
 }
+export default handler
