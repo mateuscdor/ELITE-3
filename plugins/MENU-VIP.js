@@ -37,6 +37,7 @@ let name = await conn.getName(m.sender)
 const listMessage = {
 text: `┏━━━━━━━━〔 Menú 〕━━━━━━━━━━
 ┃ 👤 hola ${name} .
+${ucapan()}
 ┃ ✨ Bienvenido al menu❗
 ┃━━━━━━━━━━━━━━━━━━━━━━━━━━
 ┃  ▢ Información basica :
