@@ -7,6 +7,7 @@ export function before(m) {
         return !0
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier))
+    let { min, xp, max } = xpRange(user.level, global.multiplier)
         user.level++
 
     if (before !== user.level) {
