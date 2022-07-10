@@ -16,7 +16,7 @@ let handler = async (m, { conn, command, args }) => {
 *▢ 1 Diamante equivale a 100 de XP.*
 └──────────────────────
 ┌──────────────────────
-*▢ TOTAL XP GASTADO*  : 「-${xpperlimit * count}」 
+*▢ TOTAL XP GASTADO*   : 「-${xpperlimit * count}」 
 *▢ DIAMANTE OBTENIDO* : 「+${count}」  
 └──────────────────────`, m)
   } else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m)
