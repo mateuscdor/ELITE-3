@@ -1,4 +1,5 @@
 import { canLevelUp } from '../lib/levelling.js'
+import { levelup } from '../lib/canvas.js'
 export function before(m) {
     let user = global.db.data.users[m.sender]
     let { exp, limit, level, role } = global.db.data.users[m.sender]
