@@ -81,27 +81,34 @@ handler.register = true
 handler.limit = 3
 export default handler
 
+//━━━━━━━━[ 🤖 ]━━━━━━━━//
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+function pickRandom(list) {
+  return list[Math.floor(Math.random() * list.length)]
+}
+
 function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
-
 function ucapan() {
-  const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  res = "buenos dias espero que tenga lindo dias✨"
   if (time >= 4) {
-    res = "🌇 *Buenos Días | Good Morning* ⛅"
+    res = "buena tarde espero que tenga linda tarde☀️i"
   }
-  if (time >= 11) {
-    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
+  if (time > 10) {
+    res = "buenos días espero que tenga lindo día✨ "
   }
   if (time >= 15) {
-    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
+    res = "buenas noches espero que tenga linda noche✨"
   }
-  if (time >= 17) {
-    res = "🌃 *Buenas noches | Good Evening* 💫"
+  if (time >= 18) {
+    res = "buenos dias espero que lindo dias✨"
   }
   return res
 }
