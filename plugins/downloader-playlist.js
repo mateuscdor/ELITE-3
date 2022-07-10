@@ -25,8 +25,8 @@ orderMessage: {
 itemCount: 9999999,
 status: 1,
 surface: 1,
-message: '𝑇ℎ𝑒 𝑀𝑦𝑠𝑡𝑖𝑐 - 𝐵𝑜𝑡 - 𝑀𝐷', 
-orderTitle: `Mystic`,
+message: 'BOT', 
+orderTitle: `VIP`,
 thumbnail: imagen1, 
 sellerJid: '0@s.whatsapp.net'}}}}
 if (command == 'playlist') {
