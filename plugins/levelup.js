@@ -2,7 +2,7 @@ import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 
 let handler = async (m, { conn }) => {
-        let { role } = global.db.data.users[m.sender]
+let { exp, limit, level, role } = global.db.data.users[m.sender]
 	let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
@@ -13,7 +13,7 @@ let handler = async (m, { conn }) => {
 ▢ Nivel : *${user.level}*
 ▢ XP : *${user.exp - min}/${xp}*
 ▢ Rango : *${role}*
-💎 𝙳𝙸𝙰𝙼𝙾𝙽𝙳 : *${limit}*
+▢ DIAMOND : *${limit}*
 └──────────────
 •Te falta *${max - user.exp}* de *XP* para subir de nivel.
 `.trim()
