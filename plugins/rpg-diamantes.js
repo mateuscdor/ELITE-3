@@ -8,14 +8,16 @@ let handler = async (m, { conn, command, args }) => {
     global.db.data.users[m.sender].exp -= xpperlimit * count
     global.db.data.users[m.sender].limit += count
     conn.reply(m.chat, `
-┌─「 *TIENDA DE DIAMANTE* 」
+┌──「 *TIENDA DE DIAMANTE* 」──
 *▢ CLIENTE : ${name}*
 └──────────────────────
 ┌──────────────────────
 *≡ Nota:*
-*▢ 1 Diamante equivale a 100 de XP*
-*▢ [-🆙] TOTAL XP GASTADO*   : 「-${xpperlimit * count}」 
-*▢ [+💎] DIAMANTES OBTENIDO* : + 「+${count}」  
+*▢ 1 Diamante equivale a 100 de XP.*
+└──────────────────────
+┌──────────────────────
+*▢ TOTAL XP GASTADO*  : 「-${xpperlimit * count}」 
+*▢ DIAMANTE OBTENIDO* : + 「+${count}」  
 └──────────────────────`, m)
   } else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m)
 }
