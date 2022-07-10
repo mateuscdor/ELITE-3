@@ -1,6 +1,8 @@
 import { canLevelUp } from '../lib/levelling.js'
 export function before(m) {
     let user = global.db.data.users[m.sender]
+    let { exp, limit, level, role } = global.db.data.users[m.sender]
+    let name = conn.getName(m.sender)
     if (!user.autolevelup)
         return !0
     let before = user.level * 1
