@@ -26,6 +26,6 @@ ${json.result[0].url}
 }
 handler.help = ['playstore'].map(v => v + ' <nama apk>')
 handler.tags = ['internet']
-handler.command = /^(playstore1)$/i
+handler.command = /^(playstore2)$/i
 handler.limit = true
 export default handler
