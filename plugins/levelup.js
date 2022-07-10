@@ -11,6 +11,7 @@ let handler = async (m, { conn }) => {
 ▢ Nombre : *${name}*
 ▢ Nivel : *${user.level}*
 ▢ XP : *${user.exp - min}/${xp}*
+▢ Rango : *${role}*
 └──────────────
 Te falta *${max - user.exp}* de *XP* para subir de nivel
 `.trim()
