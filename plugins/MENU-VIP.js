@@ -1,3 +1,4 @@
+import fs from "fs"
 import { xpRange } from '../lib/levelling.js'
 const { levelling } = '../lib/levelling.js'
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
