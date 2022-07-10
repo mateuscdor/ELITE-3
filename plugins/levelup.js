@@ -3,8 +3,6 @@ import { levelup } from '../lib/canvas.js'
 
 let handler = async (m, { conn }) => {
 let { exp, limit, level, role } = global.db.data.users[m.sender]
-let week = d.toLocaleDateString(locale, { weekday: 'long' })
-let date = d.toLocaleDateString(locale, {
 	let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
