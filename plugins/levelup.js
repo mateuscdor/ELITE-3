@@ -12,8 +12,8 @@ let { exp, limit, level, role } = global.db.data.users[m.sender]
 ▢ Nombre : *${name}*
 ▢ Nivel : *${user.level}*
 ▢ XP : *${user.exp - min}/${xp}*
+▢ Diamante : *${limit}*
 ▢ Rango : *${role}*
-▢ DIAMOND : *${limit}*
 └──────────────
 •Te falta *${max - user.exp}* de *XP* para subir de nivel.
 `.trim()
@@ -21,7 +21,7 @@ let { exp, limit, level, role } = global.db.data.users[m.sender]
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let teks = `🎊 Bien hecho ${conn.getName(m.sender)}    Nivel:`
+        let teks = `✨ Bien hecho ! ${conn.getName(m.sender)}    Nivel:`
         let str = `
 ┌─⊷ *LEVEL UP*
 ▢ Nivel anterior : *${before}*
