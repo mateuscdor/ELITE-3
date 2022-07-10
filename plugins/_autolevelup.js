@@ -9,9 +9,11 @@ export function before(m) {
 
     if (before !== user.level) {
         m.reply(`
- *SUBISTE DE NIVEL*
- *${before}* ‣  *${user.level}*
- *Escribe .nivel para verificar*`.trim())
+┌─⊷ *❗SUBISTE DE NIVEL❗*
+▢ Nivel anterior : *${before}*  
+▢ Nivel actual : *${user.level}*
+└──────────────
+*🤖 Cuanto más interactúes con el bot , mayor será tu nivel,escribe .nivel para verificar.*`.trim())
     }
 }
 export const disabled = false
