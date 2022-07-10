@@ -1,7 +1,7 @@
 import cheerio from 'cheerio'
 import fetch from 'node-fetch'
 
-let handler = async(m, { conn, text }) => {
+let handler  = async (m, { conn, text }) => {
 
   if (!text) return conn.reply(m.chat, 'Harap Masukan nama aplikasi', m)
 
