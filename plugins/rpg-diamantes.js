@@ -10,6 +10,8 @@ let handler = async (m, { conn, command, args }) => {
     conn.reply(m.chat, `
 ┌─「 *TIENDA DE DIAMANTE* 」
 *▢ CLIENTE : ${name}*
+└──────────────
+┌──────────────
 *Nota:*
 *▢ 1 Diamante equivale a 100 de XP*
 *▢ [-🆙]TOTAL XP GASTADO* : -${xpperlimit * count} 
