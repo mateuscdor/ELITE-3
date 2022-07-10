@@ -2,6 +2,7 @@ import { canLevelUp, xpRange } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 
 let handler = async (m, { conn }) => {
+        let { role } = global.db.data.users[m.sender]
 	let name = conn.getName(m.sender)
     let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
