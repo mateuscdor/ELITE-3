@@ -13,8 +13,8 @@ export function before(m) {
         m.reply(`
 ┌─⊷ *❗SUBISTE DE NIVEL❗*
 ▢ Nombre : *${name}*
-▢ Nivel anterior : *${before}*  
-▢ Nivel actual : *${user.level}*
+▢ Nivel anterior : *「 ${before}」*  
+▢ Nivel actual   : *「 ${user.level}」*
 └──────────────
 *🤖 Cuanto más interactúes con el bot , mayor será tu nivel,escribe .nivel para verificar.*`.trim())
     }
