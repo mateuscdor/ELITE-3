@@ -16,9 +16,9 @@ let handler = async (m, { conn, command, isStaff, text, usedPrefix }) => {
 👀 *𝚅𝙸𝚂𝚃𝙰𝚂:* ${viewH}
 🔗 *𝚄𝚁𝙻:* ${url}
   `.trim(), author, thumbnail, '', '', null, null, [
-    ['*🎶 MUSICA.*', `${usedPrefix}yta ${url} yes`],
-    ['*🎥 VIDEO.*', `${usedPrefix}ytv ${url} yes`],
-    ['*📥 EXTRA*', `${usedPrefix}playlist ${text}`]
+    ['🎶 MUSICA.', `${usedPrefix}yta ${url} yes`],
+    ['🎥 VIDEO.', `${usedPrefix}ytv ${url} yes`],
+    ['📥 EXTRA', `${usedPrefix}playlist ${text}`]
   ], m)
 }catch(e){
 m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
