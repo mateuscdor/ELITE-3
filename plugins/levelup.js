@@ -14,9 +14,28 @@ Todavia falta *${max - user.exp}* exp mas!
 	while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 	if (before !== user.level) {
             m.reply(`
-Enhorabuena, has subido de nivel.!
-*${before}* -> *${user.level}*
-Escribe *.nivel* para verificar
+┌───⊷ *NIVEL*
+▢ Nombre : *${name}*
+▢ Nivel : *${user.level}*
+▢ Rango : *${role}*
+▢ XP : *${user.exp - min}/${xp}*
+└──────────────
+•Te falta *${max - user.exp}* de *XP* para subir de nivel.
+`.trim()
+    }
+    let before = user.level * 1
+    while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
+    if (before !== user.level) {
+        let teks = `Bien hecho! ${conn.getName(m.sender)}    Nivel:`
+        let str = `
+┌─⊷ *LEVEL UP*
+▢ Nivel anterior : *${before}*
+▢ Nivel actual : *${user.level}*
+▢ Rango : *${role}*
+▢ Fecha : *${new Date().toLocaleString('id-ID')}*
+└──────────────
+*_Cuanto más interactúes con los bots, mayor será tu nivel_*
+
 	`.trim())
         }
 }
@@ -24,6 +43,6 @@ Escribe *.nivel* para verificar
 handler.help = ['levelup']
 handler.tags = ['xp']
 
-handler.command = /^level(|up)|nivel$/i
+handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
 
 export default handler
