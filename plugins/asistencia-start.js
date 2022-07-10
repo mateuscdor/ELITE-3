@@ -5,7 +5,7 @@ let handler = async (m, { usedPrefix, text }) => {
         throw `*❗La asistencia aun esta activo en el grupo❗*\n\n*${usedPrefix}delasitencia para borrar la asistencia activada.*`
     }
     conn.absen[id] = [
-        m.reply(`*✅ Asistencia activado con exito.*\n\n*${usedPrefix}presente* - 𝙿𝚊𝚛𝚊 𝚎𝚜𝚝𝚊𝚛 𝚙𝚛𝚎𝚜𝚎𝚗𝚝𝚎\n*${usedPrefix}cekabsen* - 𝙿𝚊𝚛𝚊 𝚌𝚘𝚖𝚙𝚛𝚘𝚋𝚊𝚛 𝚕𝚊 𝚊𝚜𝚒𝚜𝚝𝚎𝚗𝚌𝚒𝚊\n*${usedPrefix}delasistencia* - 𝙿𝚊𝚛𝚊 𝚋𝚘𝚛𝚛𝚊𝚛 𝚕𝚘𝚜 𝚍𝚊𝚝𝚘𝚜 𝚍𝚎 𝚊𝚜𝚒𝚜𝚝𝚎𝚗𝚌𝚒𝚊`),
+        m.reply(`*✅ Asistencia activado con exito.*\n\n*▢ ${usedPrefix}presente* estar presente.\n*▢ ${usedPrefix}11111 verificar lista de asistencia.*\n*▢ ${usedPrefix}delasistencia borrar todos los datos de la asistencia*`),
         [],
         text
     ]
