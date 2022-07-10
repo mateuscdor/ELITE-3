@@ -12,6 +12,10 @@ export function before(m) {
 ┌─⊷ *❗SUBISTE DE NIVEL❗*
 ▢ Nivel anterior : *${before}*  
 ▢ Nivel actual : *${user.level}*
+▢ Nombre : *${name}*
+▢ Nivel : *${user.level}*
+▢ Rango : *${role}*
+▢ XP : *${user.exp - min}/${xp}*
 └──────────────
 *🤖 Cuanto más interactúes con el bot , mayor será tu nivel,escribe .nivel para verificar.*`.trim())
     }
