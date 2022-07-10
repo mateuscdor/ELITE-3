@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.absen = conn.absen ? conn.absen : {}
-    if (!(id in conn.absen)) throw `_*𝙽𝚘 𝚑𝚊𝚢 𝚊𝚜𝚒𝚜𝚝𝚎𝚗𝚌𝚒𝚊 𝚎𝚗 𝚎𝚜𝚝𝚎 𝚐𝚛𝚞𝚙𝚘!*_\n\n*${usedPrefix}asistencia* - 𝙿𝚊𝚛𝚊 𝚎𝚖𝚙𝚎𝚣𝚊𝚛 𝚊𝚜𝚒𝚜𝚝𝚎𝚗𝚌𝚒𝚊`
+    if (!(id in conn.absen)) throw `*❗No hay asistencia en este grupo❗*\n\n*▢ ${usedPrefix}asistencia* para empezar la asistencia.`
 
     let d = new Date
     let date = d.toLocaleDateString('id', {
@@ -14,7 +14,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.reply(m.chat, `*「 𝐀𝐒𝐈𝐒𝐓𝐄𝐍𝐂𝐈𝐀 」*
 𝙵𝚎𝚌𝚑𝚊: ${date}
 ${conn.absen[id][2]}
-┌ *𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂 𝙿𝚁𝙴𝚂𝙴𝙽𝚃𝙴𝚂:*
+┌ *🔰 Usuarios presentes:*
 │ 
 │ Total: ${absen.length}
 ${list}
@@ -24,6 +24,6 @@ ${list}
 }
 handler.help = ['cekabsen']
 handler.tags = ['absen']
-handler.command = /^cekabsen$/i
+handler.command = /^listasist$/i
 handler.group = true
 export default handler
