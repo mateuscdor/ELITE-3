@@ -10,13 +10,13 @@ let handler = async (m, { conn, command, args }) => {
     conn.reply(m.chat, `
 ┌─「 *TIENDA DE DIAMANTE* 」
 *▢ CLIENTE : ${name}*
-└──────────────
-┌──────────────
-*Nota:*
+└──────────────────────
+┌──────────────────────
+*≡ Nota:*
 *▢ 1 Diamante equivale a 100 de XP*
-*▢ [-🆙]TOTAL XP GASTADO* : -${xpperlimit * count} 
-*▢ [+💎] DIAMANTES OBTENIDO* : + ${count}  
-└──────────────`, m)
+*▢ [-🆙] TOTAL XP GASTADO*   : 「-${xpperlimit * count}」 
+*▢ [+💎] DIAMANTES OBTENIDO* : + 「+${count}」  
+└──────────────────────`, m)
   } else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m)
 }
 handler.help = ['Buy', 'Buyall']
