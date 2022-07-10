@@ -12,7 +12,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let absen = conn.absen[id][1]
     let list = absen.map((v, i) => `│ ${i + 1}. @${v.split`@`[0]}`).join('\n')
     conn.reply(m.chat, `*「 𝐀𝐒𝐈𝐒𝐓𝐄𝐍𝐂𝐈𝐀 」*
-𝙵𝚎𝚌𝚑𝚊: ${date}
+▢ Fecha y hora : *${new Date().toLocaleString('id-ID')}*
 ${conn.absen[id][2]}
 ┌ *🔰 Usuarios presentes:*
 │ 
