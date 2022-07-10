@@ -2,13 +2,11 @@ import { canLevelUp } from '../lib/levelling.js'
 import { levelup } from '../lib/canvas.js'
 export function before(m) {
     let user = global.db.data.users[m.sender]
-    let { exp, limit, level, role } = global.db.data.users[m.sender]
     let name = conn.getName(m.sender)
     if (!user.autolevelup)
         return !0
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier))
-    let { min, xp, max } = xpRange(user.level, global.multiplier)
         user.level++
 
     if (before !== user.level) {
@@ -17,9 +15,6 @@ export function before(m) {
 ▢ Nivel anterior : *${before}*  
 ▢ Nivel actual : *${user.level}*
 ▢ Nombre : *${name}*
-▢ Nivel : *${user.level}*
-▢ Rango : *${role}*
-▢ XP : *${user.exp - min}/${xp}*
 └──────────────
 *🤖 Cuanto más interactúes con el bot , mayor será tu nivel,escribe .nivel para verificar.*`.trim())
     }
