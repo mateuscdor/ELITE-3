@@ -5,9 +5,9 @@ let handler = async (m, { usedPrefix }) => {
 
     let absen = conn.absen[id][1]
     const wasVote = absen.includes(m.sender)
-    if (wasVote) throw '*𝙴𝚜𝚝𝚊𝚜 𝙿𝚛𝚎𝚜𝚎𝚗𝚝𝚎!*'
+    if (wasVote) throw '*❗Estas presente.*'
     absen.push(m.sender)
-    m.reply(`Done!`)
+    m.reply(`*✨ Presente.*`)
     let d = new Date
     let date = d.toLocaleDateString('id', {
         day: 'numeric',
