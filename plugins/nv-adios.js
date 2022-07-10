@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /Bye|BYE|Adios|adiós|Adiós|adios|bye|chau|𝙰𝙳𝙸𝙾𝚂/
+handler.customPrefix = /Bye|BYE|chale|Chale|CHALE|llorar|Llorar|LLORAR|Adios|adiós|Adiós|adios|bye|chau|𝙰𝙳𝙸𝙾𝚂/
 handler.command = new RegExp
 export default handler
