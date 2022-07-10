@@ -5,7 +5,7 @@ let handler = async (m, { conn, args, command }) => {
         }
 handler.help = ['leavegc', 'out']
 handler.tags = ['owner']
-handler.command = /^(!banbot|!bye)$/i
+handler.command = /^(!banbot|!bot|!bye)$/i
 
 handler.rowner = true
 
