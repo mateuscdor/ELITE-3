@@ -14,7 +14,7 @@ let { exp, limit, level, role } = global.db.data.users[m.sender]
 ▢ XP : *${user.exp - min}/${xp}*
 ▢ Diamante : *${limit}*
 ▢ Rango : *${role}*
-${new Date().toLocaleString('id-ID')}
+▢ Fecha y hora : *${new Date().toLocaleString('id-ID')}*
 └──────────────
 •Te falta *${max - user.exp}* de *XP* para subir de nivel.
 `.trim()
