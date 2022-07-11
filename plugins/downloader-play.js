@@ -10,11 +10,11 @@ let handler = async (m, { conn, command, isStaff, text, usedPrefix }) => {
   await m.reply(global.wait)
   await conn.sendHydrated(m.chat, `
 ┌──────────────
-📌 *𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-📇 *𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* ${description}
-📆 *𝙿𝚄𝙱𝙻𝙸𝙲𝙰𝙳𝙾:* ${publishedTime}
-⌚ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${durationH}
-👀 *𝚅𝙸𝚂𝚃𝙰𝚂:* ${viewH}
+▢ 📌 *TITULO:* ${title}
+▢ 📇 *DESCRIPCION:* ${description}
+▢ 📆 *PUBLICADO:* ${publishedTime}
+▢ ⏱️ *DURACION:* ${durationH}
+▢ 👀 *VISTAS:* ${viewH}
 └──────────────
   `.trim(), author, thumbnail, `${url}`, 'YOUTUBE', null, null, [
     ['🎶 MUSICA.', `${usedPrefix}yta ${url} yes`],
