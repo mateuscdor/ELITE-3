@@ -12,7 +12,7 @@ conn.reply(m.chat, `${eg}    ❗ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢 𝗕𝗔𝗡𝗘�
 }
 handler.help = ['ban']
 handler.tags = ['owner']
-handler.command = /^ban$/i
+handler.command = /^block$/i
 handler.group = true
 handler.admin = true 
 export default handler
