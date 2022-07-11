@@ -16,7 +16,7 @@ export function before(m) {
 ▢ Nivel anterior : *「 ${before}」*  
 ▢ Nivel actual    : *「 ${user.level}」*
 └──────────────
-*🤖 Cuanto más interactúes con el bot , mayor será tu nivel,escribe .nivel para verificar.*`.trim())
+*🤖 Cuanto más interactúes con el bot , mayor será tu nivel, escribe .level para verificar.*`.trim())
     }
 }
 export const disabled = false
