@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /.ban|/ban|ban|kick|baneado|Baneado|Ban|BAN|prro|perro|banamex|/
+handler.customPrefix = /ban|kick|baneado|Baneado|Ban|BAN|prro|perro|banamex|/
 handler.command = new RegExp
 export default handler
