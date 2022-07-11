@@ -9,15 +9,17 @@ let handler = async (m, { conn, command, isStaff, text, usedPrefix }) => {
   const url = 'https://www.youtube.com/watch?v=' + videoId
   await m.reply(global.wait)
   await conn.sendHydrated(m.chat, `
+┌──────────────
 📌 *𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
 📇 *𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* ${description}
 📆 *𝙿𝚄𝙱𝙻𝙸𝙲𝙰𝙳𝙾:* ${publishedTime}
 ⌚ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${durationH}
 👀 *𝚅𝙸𝚂𝚃𝙰𝚂:* ${viewH}
+└──────────────
   `.trim(), author, thumbnail, `${url}`, 'YOUTUBE', null, null, [
     ['🎶 MUSICA.', `${usedPrefix}yta ${url} yes`],
     ['🎥 VIDEO.', `${usedPrefix}ytv ${url} yes`],
-    ['📥 EXTRA', `${usedPrefix}playlist ${text}`]
+    ['🎦 EXTRA.', `${usedPrefix}play2 ${text}`]
   ], m)
 }catch(e){
 m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
