@@ -7,7 +7,7 @@ let handler = async (m, { conn, text}) => {
     if (!who) throw '*Etiquete a una persona con el @*'
     let users = global.db.data.users
     let username = conn.getName(who)
-    conn.reply(m.chat, `❗ *USUARIO BANEADO* ❗\n\n┌──────────────────────\n\n*▢ Acceso al BOT.*\n*▢ Grupos y chat pv.*\n*▢ Disfrute del BOT:*\n    ${username}. \n\n└──────────────────────\n\n*•ATTE: 𝗕𝗢𝗧 ${gt}*`, m)
+    conn.reply(m.chat, `   ❗ *USUARIO BANEADO* ❗\n\n┌──────────────────────\n\n*▢ Acceso al BOT.*\n*▢ Grupos y chat pv.*\n*▢ Disfrute del BOT:*\n    ${username}. \n\n└──────────────────────\n\n*•ATTE: 𝗕𝗢𝗧 ${gt}*`, m)
 }
 handler.help = ['ban']
 handler.tags = ['owner']
