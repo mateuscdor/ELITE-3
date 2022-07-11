@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, command, usedPrefix }) => {
-if (!text) throw `  ❗𝙀𝙏𝙄𝙌𝙐𝗘𝗧𝘼𝗥 𝗔 𝘼𝙇𝙂𝙐𝙄𝙀𝙉 𝙋𝘼𝙍𝘼 𝘽𝘼𝙉𝙀𝘼𝙍.\n|n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} @tag*`
+if (!text) throw `  ❗𝙀𝙏𝙄𝙌𝙐𝗘𝗧𝘼𝗥 𝗔 𝘼𝙇𝙂𝙐𝙄𝙀𝙉 𝙋𝘼𝙍𝘼 𝘽𝘼𝙉𝙀𝘼𝙍.\n\n 𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} @tag*`
 let who
 if (m.isGroup) who = m.mentionedJid[0]
 else who = m.chat
