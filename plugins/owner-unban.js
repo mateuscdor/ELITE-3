@@ -11,7 +11,7 @@ let handler = async (m, { conn, text}) => {
 }
 handler.help = ['ban']
 handler.tags = ['owner']
-handler.command = /^unblock$/i
+handler.command = /^unban$/i
 handler.owner = false
 handler.premium = true
 
