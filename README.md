@@ -26,23 +26,9 @@ pkg install yarn
 git clone https://github.com/MASTER-VIP-ADM/ELITE
 ```
 ```
-cd [❌]
+cd [❎]
 ```
 ```
-npm install
+Contiene clave de acceso bloqueado[❎]
 ```
-``` 
-yarn install 
-```
-```
-npm install
-```
-```
-npm update
-```
-```
-ls
-```
-```
-npm [❌]
-```
+
