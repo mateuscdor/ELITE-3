@@ -6,7 +6,7 @@ if (m.isGroup) who = m.mentionedJid[0]
 else who = m.chat
 if (!who) throw `${mg} ❗𝗘𝗧𝗜𝗤𝗨𝗘𝗧𝗔𝗥 𝗔 𝗔𝗟𝗚𝗨𝗜𝗘𝗡 𝗣𝗔𝗥𝗔 𝗕𝗔𝗡𝗘𝗔𝗥.\n\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} @tag*`
 let users = global.db.data.users
-
+users[who].banned = true
 let username = conn.getName(who)
 conn.reply(m.chat, `${eg}    ❗ 𝗨𝗦𝗨𝗔𝗥𝗜𝗢 𝗕𝗔𝗡𝗘𝗔𝗗𝗢 ❗\n\n➖Registrado en blocklist .\n➖No accede a comandos .\n➖BOT ignora a :\n      ${username}. \n\n*𝙰𝚃𝚃𝙴: 𝗕𝗢𝗧 ${gt}*`, m)
 }
