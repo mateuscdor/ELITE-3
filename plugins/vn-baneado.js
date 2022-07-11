@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /baneado|Baneado/
+handler.customPrefix = /fracasado|permabaneado|fracazado|/
 handler.command = new RegExp
 export default handler
