@@ -14,5 +14,6 @@ conn.reply(m.chat, `     ❗ *USUARIO DESBLOQUEADO* ❗\n\n┌──────
 handler.help = ['unbanuser']
 handler.tags = ['owner']
 handler.command = /^unblock$/i
-handler.rowner = true
+handler.group = true
+handler.admin = true
 export default handler
