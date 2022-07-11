@@ -1,4 +1,3 @@
-
 let handler = async (m, { conn, text}) => {
 await conn.sendMessage(m.chat, { react: { text: '❎', key: m.key } })  
 await m.reply(global.wait)
