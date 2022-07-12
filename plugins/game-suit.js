@@ -2,6 +2,7 @@ let timeout = 60000
 let poin = 1000
 let poin_lose = -100
 let handler = async (m, { conn, usedPrefix }) => {
+
   conn.suit = conn.suit ? conn.suit : {}
   if (Object.values(conn.suit).find(room => room.id.startsWith('suit') && [room.p, room.p2].includes(m.sender))) throw '*[ ⚠ ] 𝚈𝙰 𝚂𝙴 𝙴𝙽𝙲𝚄𝙴𝙽𝚃𝚁𝙰 𝙴𝙽 𝚄𝙽 𝙿𝚅𝙿, 𝚃𝙴𝚁𝙼𝙸𝙽𝙴 𝙰𝙽𝚃𝙴𝚂 𝙳𝙴 𝙸𝙽𝙸𝙲𝙸𝙰𝚁 𝙾𝚃𝚁𝙰.*'
   if (!m.mentionedJid[0]) return m.reply(`*[❗] ¿𝙲𝙾𝙽 𝚀𝚄𝙸𝙴𝙽 𝙳𝙴𝚂𝙴𝙰 𝙹𝚄𝙶𝙰𝚁?*\n*𝙴𝚃𝙸𝚀𝚄𝙴𝚃𝙴 𝙰 𝙻𝙰 𝙿𝙴𝚁𝚂𝙾𝙽𝙰!*\n\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix}suit @tag*`, m.chat, { contextInfo: 
@@ -29,8 +30,11 @@ Por favor @${m.mentionedJid[0].split`@`[0]} acepta o rechaza
   }
 }
 handler.tags = ['game']
-handler.help = ['suitpvp', 'suit'].map(v => v + ' @tag')
-handler.command = /^suit(pvp)?$/i
+handler.help = ['gameppt', 'suitpvp', 'suit'].map(v => v + ' @tag')
+handler.command = ['gameppt', 'suitpvp', 'suit']
+handler.register = true
+handler.limit = 10
+handler.level = 5
 
 handler.group = true
 handler.game = true
