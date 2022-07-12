@@ -1,4 +1,6 @@
 let handler = m => m
+await conn.sendMessage(m.chat, { react: { text: '🎮', key: m.key } })  
+await m.reply(global.wait)
 handler.before = async function (m) {
   this.suit = this.suit ? this.suit : {}
   if (db.data.users[m.sender].suit < 0) db.data.users[m.sender].suit = 0
