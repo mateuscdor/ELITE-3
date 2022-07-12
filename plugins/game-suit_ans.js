@@ -8,7 +8,7 @@ handler.before = async function (m) {
     let tie = false
     if (m.sender == room.p2 && /^(acc(ept)?|aceptar|ok|acepto(k.)?bisa)/i.test(m.text) && m.isGroup && room.status == 'wait') {
       if (/^(rechazar|cancelar|negar(k.)?bisa)/i.test(m.text)) {
-        this.reply(m.chat, `No hubo respuesta de @${room.p2.split`@`[0]} el suit se cancela`, m)
+        this.reply(m.chat, `*[❗] @${room.p2.split`@`[0]} 𝚁𝙴𝙲𝙷𝙰𝚉𝙾 𝙾 𝙸𝙶𝙽𝙾𝚁𝙾 𝙴𝙻 𝙿𝚅𝙿, 𝙴𝙻 𝙿𝚅𝙿 𝚂𝙴 𝙲𝙰𝙽𝙲𝙴𝙻𝙰*`, m)
         delete this.suit[room.id]
         return !0
       }
@@ -16,23 +16,22 @@ handler.before = async function (m) {
       room.asal = m.chat
       clearTimeout(room.waktu)
       //delete room[room.id].waktu
-      m.reply(`El suit ha sido enviado al chat.
-@${room.p.split`@`[0]} vs @${room.p2.split`@`[0]}
-
-Por favor elige en el chat privado del bot
-pulsando aqui wa.me/${conn.user.jid.split`@`[0]}`, m.chat, 
+      m.reply(`*🎮 𝙶𝙰𝙼𝙴𝚂 - 𝙿𝚅𝙿 - 𝙶𝙰𝙼𝙴𝚂 🎮*
+*—◉ 𝙴𝙻 𝙹𝚄𝙴𝙶𝙾 𝙲𝙾𝙼𝙸𝙴𝙽𝚉𝙰, 𝙻𝙰𝚂 𝙾𝙿𝙲𝙸𝙾𝙽𝙴𝚂 𝙷𝙰𝙽 𝚂𝙸𝙳𝙾 𝙴𝙽𝚅𝙸𝙰𝙳𝙾𝚂 𝙰 𝙻𝙾𝚂 𝙲𝙷𝙰𝚃𝚂 𝙿𝚁𝙸𝚅𝙰𝙳𝙾𝚂 𝙳𝙴 @${room.p.split`@`[0]} 𝚈 @${room.p2.split`@`[0]}*
+*◉ 𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴𝙽 𝚄𝙽𝙰 𝙾𝙿𝙲𝙸𝙾𝙽 𝙴𝙽 𝚂𝚄𝚂 𝙲𝙷𝙰𝚃𝚂 𝙿𝚁𝙸𝚅𝙰𝙳𝙾𝚂, 𝚁𝙴𝚂𝙿𝙴𝙲𝚃𝙸𝚅𝙰𝙼𝙴𝙽𝚃𝙴*
+*◉ 𝙴𝙻𝙴𝙶𝙸𝚁 𝙾𝙿𝙲𝙸𝙾𝙽 𝙴𝙽 wa.me/${conn.user.jid.split`@`[0]}*`, m.chat, 
          {
           mentions: [room.p, room.p2]
         }
       )
 
-      if (!room.pilih) this.sendButton(room.p, `Selecciona una opcion\nGanador +${room.poin}XP\nPerdedor ${room.poin_lose}XP`, author, null, [[ 'Piedra🗿', 'Piedra'], ['Papel📄', 'Papel'], ['Tijeras✂️', 'Tijeras']], m)
-      if (!room.pilih2) this.sendButton(room.p2, `Selecciona una opcion\nGanador +${room.poin}XP\nPerdedor ${room.poin_lose}XP`, author, null, [['Piedra🗿', 'Piedra'], ['Papel📄', 'Papel'], ['Tijeras✂️', 'Tijeras']], m)
+      if (!room.pilih) this.sendButton(room.p, `*𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝚄𝙽𝙰 𝙳𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙾𝙿𝙲𝙸𝙾𝙽𝙴𝚂*', `𝙶𝙰𝙽𝙰𝙳𝙾𝚁 +${room.poin}𝚇𝙿\n𝙿𝙴𝚁𝙳𝙴𝙳𝙾𝚁 ${room.poin_lose} 𝚇𝙿\n𝙴𝙼𝙿𝙰𝚃𝙴 +${room.poin_bot} 𝚇𝙿``, author, null, [[ 'PIEDRA🗿', 'Piedra'], ['PAPEL📄', 'Papel'], ['TIJERA✂️', 'Tijeras']], m)
+      if (!room.pilih2) this.sendButton(room.p2, `*𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝚄𝙽𝙰 𝙳𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙾𝙿𝙲𝙸𝙾𝙽𝙴𝚂*', `𝙶𝙰𝙽𝙰𝙳𝙾𝚁 +${room.poin}𝚇𝙿\n𝙿𝙴𝚁𝙳𝙴𝙳𝙾𝚁 ${room.poin_lose} 𝚇𝙿\n𝙴𝙼𝙿𝙰𝚃𝙴 +${room.poin_bot} 𝚇𝙿``, author, null, [['PIEDRA🗿', 'Piedra'], ['PAPEL📄', 'Papel'], ['TIJERA✂️', 'Tijeras']], m)
       room.waktu_milih = setTimeout(() => {
-        if (!room.pilih && !room.pilih2) this.reply(m.chat, `Los jugadores no quieren jugar,\nSuit cancelado`)
+        if (!room.pilih && !room.pilih2) this.reply(m.chat, `*[❗] 𝙽𝙸𝙽𝙶𝚄𝙽 𝙹𝚄𝙶𝙰𝙳𝙾𝚁 𝚃𝙾𝙼𝙾 𝙻𝙰 𝙸𝙽𝙸𝙲𝙸𝙰𝚃𝙸𝚅𝙰 𝙳𝙴 𝙴𝙼𝙴𝙿𝙴𝚉𝙰𝚁 𝙴𝙻 𝙹𝚄𝙴𝙶𝙾, 𝙴𝙻 𝙿𝚅𝙿 𝚂𝙴 𝙰𝙷 𝙲𝙰𝙽𝙲𝙴𝙻𝙰𝙳𝙾*`, wm, null, [['🤖 MENU', '/menu']], m)
         else if (!room.pilih || !room.pilih2) {
           win = !room.pilih ? room.p2 : room.p
-          this.reply(m.chat, `@${(room.pilih ? room.p2 : room.p).split`@`[0]} no elijas, el juego termino`, m)
+          this.reply(m.chat, `*[❗] @${(room.pilih ? room.p2 : room.p).split`@`[0]} 𝙽𝙾 𝙴𝙻𝙴𝙶𝙸𝚂𝚃𝙴 𝙽𝙸𝙽𝙶𝚄𝙽𝙰 𝙾𝙿𝙲𝙸𝙾𝙽, 𝙵𝙸𝙽 𝙳𝙴𝙻 𝙿𝚅𝙿.*`, m)
           db.data.users[win == room.p ? room.p : room.p2].exp += room.poin
           db.data.users[win == room.p ? room.p2 : room.p].exp -= room.poin_lose
         }
