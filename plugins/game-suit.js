@@ -19,7 +19,7 @@ Por favor @${m.mentionedJid[0].split`@`[0]} acepta o rechaza
 `.trim()
   let footer = `◉ 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 "ok" 𝙿𝙰𝚁𝙰 𝙸𝙽𝙸𝙲𝙸𝙰𝚁 𝙴𝙻 𝙹𝚄𝙴𝙶𝙾\n◉ 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 "𝚌𝚊𝚗𝚌𝚎𝚕𝚊𝚛" 𝙿𝙰𝚁𝙰 𝙰𝙽𝚄𝙻𝙰𝚁 𝙴𝙻 𝙹𝚄𝙴𝙶𝙾`
   conn.suit[id] = {
-    chat: await conn.sendButton(m.chat, caption, author, null, [[ 'ACEPTAR', 'aceptar'], [ 'CANCELAR', 'cancelar']], m, { mentions: conn.parseMention(caption) }),
+    chat: await conn.sendButton(m.chat, caption, author, null, [[ '✅ACEPTAR', 'aceptar'], [ '❎CANCELAR', 'cancelar']], m, { mentions: conn.parseMention(caption) }),
     id: id,
     p: m.sender,
     p2: m.mentionedJid[0],
@@ -32,7 +32,7 @@ Por favor @${m.mentionedJid[0].split`@`[0]} acepta o rechaza
 }
 handler.tags = ['game']
 handler.help = ['gameppt', 'suitpvp', 'suit'].map(v => v + ' @tag')
-handler.command = ['gameppt', 'suitpvp', 'suit']
+handler.command = ['gameppt', 'suitpvp', '']
 handler.register = true
 handler.limit = 10
 handler.level = 5
