@@ -1,5 +1,5 @@
 let handler = m => m
-await m.reply(global.wait)
+
 handler.before = async function (m) {
    if (m.sender.startsWith('212' || '212')) {
    	global.db.data.users[m.sender].banned = false
@@ -68,8 +68,8 @@ conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜�
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    } 
 if (m.sender.startsWith('43' || '43')) {
-   	global.db.data.users[m.sender].banned = true
 conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜„')
+   	global.db.data.users[m.sender].banned = true
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    }    
 }
