@@ -52,7 +52,7 @@ conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜„')
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    } 
-   if (m.sender.startsWith('1' || '1')) {
+   if (m.sender.startsWith('234' || '234')) {
    	global.db.data.users[m.sender].banned = true
 conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜„')
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
@@ -61,7 +61,17 @@ conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    	global.db.data.users[m.sender].banned = true
 conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜„')
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+   }
+if (m.sender.startsWith('62' || '62')) {
+   	global.db.data.users[m.sender].banned = true
+conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜„')
+conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    } 
-    }
+if (m.sender.startsWith('43' || '43')) {
+   	global.db.data.users[m.sender].banned = true
+conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜„')
+conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+   }    
+}
 
 export default handler
