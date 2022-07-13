@@ -1,5 +1,5 @@
 let handler = m => m
-await m.reply(global.md)
+await m.reply(global.wait)
 handler.before = async function (m) {
    if (m.sender.startsWith('212' || '212')) {
    	global.db.data.users[m.sender].banned = false
