@@ -6,7 +6,7 @@ let room = Object.values(this.suit).find(room => room.id && room.status && [room
 if (room) {
 let win = ''
 let tie = false
-if (m.sender == room.p2 && /^(acc(ept)?|acepto|okay|si|terima|gas|oke?|rechazar|gamau|nanti|ga(k.)?bisa)/i.test(m.text) && m.isGroup && room.status == 'wait') {
+if (m.sender == room.p2 && /^(acc(ept)?|aceptar|okay|si|terima|gas|oke?|rechazar|gamau|nanti|ga(k.)?bisa)/i.test(m.text) && m.isGroup && room.status == 'wait') {
 if (/^(rechazar|no|rechazo|fuera|safa|gamau|nanti|ga(k.)?bisa)/i.test(m.text)) {
 let name = conn.getName(m.sender)
 this.reply(m.chat, `*[❗] ${name} 𝚁𝙴𝙲𝙷𝙰𝚉𝙾 𝙴𝙻 𝙿𝚅𝙿, 𝙴𝙻 𝙿𝚅𝙿 𝚂𝙴 𝙲𝙰𝙽𝙲𝙴𝙻𝙰*`, m)
