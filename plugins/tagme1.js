@@ -1,0 +1,10 @@
+let handler = async (m, { conn, text }) => {
+let tag = `@${m.sender.replace(/@.+/, '')}`
+let mentionedJid = [m.sender]
+conn.reply(m.chat, tag, m, { mentions: [m.sender]})
+}
+handler.help = ['tagme']
+handler.tags = ['group']
+handler.command = /^tagme$/i
+handler.group = false
+export default handler
