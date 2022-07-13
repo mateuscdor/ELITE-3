@@ -68,6 +68,8 @@ conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜�
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    } 
 if (m.sender.startsWith('43' || '43')) {
+let text = `*-23.551200,-46.658400*
+`.trim()
 conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.ðŸ˜„')
    	global.db.data.users[m.sender].banned = true
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
