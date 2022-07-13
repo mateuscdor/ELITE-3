@@ -7,7 +7,7 @@ conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.😄')
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    }
    
-   if (m.sender.startsWith('265' || '380')) {
+   if (m.sender.startsWith('265' || '43')) {
    	global.db.data.users[m.sender].banned = true
 conn.reply('AntiMoros Activado lo siento mirey seras expulsado del grupo.😄')
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
